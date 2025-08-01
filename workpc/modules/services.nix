@@ -26,8 +26,6 @@
 
   services.mullvad-vpn.enable = true;
 
-  services.autogitpush.timer.enable = true; # custom
-
   virtualisation.libvirtd.enable = true;
   virtualisation.spiceUSBRedirection.enable = true;
   virtualisation.podman = {
