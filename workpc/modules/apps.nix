@@ -4,7 +4,7 @@
   users.users.henrikp = {
     isNormalUser = true;
     description = "Henrik Petersen";
-    extraGroups = [ "networkmanager" "wheel" "input"];
+    extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
       kdePackages.kate
       rustup
