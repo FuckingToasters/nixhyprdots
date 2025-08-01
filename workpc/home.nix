@@ -4,7 +4,6 @@
   home.username = "henrikp";
   home.homeDirectory = "/home/henrikp";
   home.stateVersion = "25.05";
-  home.backupFileExtension = "hm-backup";
   home.packages = with pkgs; [
     noto-fonts
     noto-fonts-emoji
@@ -54,7 +53,7 @@
      enable=true;
      defaultFonts = {
         monospace = [ "Noto Sans Mono" "FontAwesome" ];
-        sansSerif = [ "Noto Sans" "FontsAwesome" ];
+        sansSerif = [ "Noto Sans" "FontAwesome" ];
         emoji = ["Noto Color Emoji"];
      };
   };
