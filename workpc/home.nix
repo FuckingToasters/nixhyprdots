@@ -6,13 +6,15 @@
   home.stateVersion = "25.05";
 
   home.packages = with pkgs; [
+    noto-fonts
+    noto-fonts-emoji
+    noto-fonts-color-emoji
+    noto-fonts-cjk  
     inotify-tools
     hyprpaper
     hyprpanel
     hyprlock
     swaylock
-    #swaync
-    #wal
     wofi
     waybar
     niri
@@ -47,7 +49,12 @@
     };
   };
 
-
+  fonts.fontconfig = {
+     enable=true;
+     defaultFonts = {
+        emoji = ["Noto Color Emoji"]
+     };
+  };
 
   programs.home-manager.enable = true;
   programs.kitty.enable = true;
@@ -55,7 +62,6 @@
   programs.wofi.enable = true;
   programs.waybar.enable = true;
   programs.swaylock.enable = true;
-  #programs.wal.enable = true;
 
   programs.bash = {
     enable = true;
