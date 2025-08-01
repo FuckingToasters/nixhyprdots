@@ -23,6 +23,7 @@
 
   services.flatpak.enable = true; 
   services.xserver.enable = true;
+  #services.dunst.enable = true;
 
   services.mullvad-vpn.enable = true;
 

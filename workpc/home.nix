@@ -55,9 +55,7 @@
   programs.wofi.enable = true;
   programs.waybar.enable = true;
   programs.swaylock.enable = true;
-  programs.wal.enable = true;
-  programs.dunst.enable = true;
-
+  #programs.wal.enable = true;
 
   programs.bash = {
     enable = true;
