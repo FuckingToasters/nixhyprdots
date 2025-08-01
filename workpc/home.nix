@@ -8,12 +8,20 @@
   home.packages = with pkgs; [
     inotify-tools
     hyprpaper
+    hyprpanel
+    hyprlock
+    swaylock
+    swaync
+    wal
+    wofi
+    waybar
+    niri
+    rofi    
     kdePackages.dolphin
     networkmanagerapplet
     pipewire
     playerctl
     brightnessctl
-    hyprlock
   ];
 
   systemd.user.services.autogitpush = {
@@ -45,7 +53,11 @@
   programs.kitty.enable = true;
   programs.firefox.enable = true;
   programs.wofi.enable = true;
-  programs.waybar.enable = true;  # Changed from services.waybar
+  programs.waybar.enable = true;
+  programs.swaylock.enable = true;
+  programs.wal.enable = true;
+  programs.dunst.enable = true;
+
 
   programs.bash = {
     enable = true;
