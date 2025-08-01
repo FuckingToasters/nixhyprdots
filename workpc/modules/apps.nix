@@ -80,6 +80,7 @@
       ncdu
       kdePackages.kleopatra
       xclip
+      hyprpanel
 
  ];
   };
