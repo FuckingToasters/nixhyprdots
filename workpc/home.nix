@@ -9,7 +9,8 @@
     noto-fonts
     noto-fonts-emoji
     noto-fonts-color-emoji
-    noto-fonts-cjk-sans  
+    noto-fonts-cjk-sans
+    font-awesome  
     inotify-tools
     hyprpaper
     hyprpanel
@@ -52,6 +53,8 @@
   fonts.fontconfig = {
      enable=true;
      defaultFonts = {
+        monospace = [ "Noto Sans Mono" "FontAwesome" ];
+        sansSerif = [ "Noto Sans" "FontsAwesome" ];
         emoji = ["Noto Color Emoji"];
      };
   };
