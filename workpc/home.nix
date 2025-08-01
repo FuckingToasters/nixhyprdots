@@ -9,7 +9,7 @@
     noto-fonts
     noto-fonts-emoji
     noto-fonts-color-emoji
-    noto-fonts-cjk  
+    noto-fonts-cjk-sans  
     inotify-tools
     hyprpaper
     hyprpanel
@@ -52,7 +52,7 @@
   fonts.fontconfig = {
      enable=true;
      defaultFonts = {
-        emoji = ["Noto Color Emoji"]
+        emoji = ["Noto Color Emoji"];
      };
   };
 
