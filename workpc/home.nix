@@ -11,8 +11,8 @@
     hyprpanel
     hyprlock
     swaylock
-    swaync
-    wal
+    #swaync
+    #wal
     wofi
     waybar
     niri
