@@ -15,6 +15,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
   boot.kernelPackages = pkgs.linuxPackages_latest;
   hardware.enableAllFirmware = true;
+  hardware.firmware.uncompressed = true;
 
   networking.hostName = "workpc"; # Define your hostname.
   #networking.networkmanager.enable = true;
