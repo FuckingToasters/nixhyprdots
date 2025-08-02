@@ -71,9 +71,9 @@
     # ========== Python & Dev ==========
     git
     #python-pip           # CAUSE ERROR
-    python-gobject
-    python-screeninfo
-    python-pywalfox
+    #python-gobject       # CAUSE ERROR
+    #python-screeninfo    # CAUSE ERROR
+    #python-pywalfox      # CAUSE ERROR
     rust
     cargo
 
@@ -81,12 +81,12 @@
     noto-fonts
     noto-fonts-emoji
     noto-fonts-color-emoji   # from your home.nix
-    noto-fonts-cjk
+    #noto-fonts-cjk 	     # RENAMED TO noto-fonts-cjk-sans
     noto-fonts-cjk-sans      # from your home.nix
     noto-fonts-extra
     font-awesome             # from your home.nix
-    otf-font-awesome
-    ttf-dejavu
+    #otf-font-awesome        # CAUSE ERROR
+    #ttf-dejavu              # CAUSE ERROR
     ttf-fira-sans
     ttf-fira-code
     ttf-firacode-nerd
