@@ -5,26 +5,115 @@
   home.homeDirectory = "/home/henrikp";
   home.stateVersion = "25.05";
   home.packages = with pkgs; [
-    noto-fonts
-    noto-fonts-emoji
-    noto-fonts-color-emoji
-    noto-fonts-cjk-sans
-    font-awesome  
-    inotify-tools
+    # ========== Wayland/Hyprland & Related ==========
+    hyprland
     hyprpaper
     hyprpanel
     hyprlock
-    swaylock
-    wofi
-    waybar
-    niri
-    rofi    
-    kdePackages.dolphin
-    networkmanagerapplet
-    pipewire
-    playerctl
-    brightnessctl
+    hypridle
+    hyprpicker
+    hyprshade
+    swaylock    # from your home.nix
+    swaync
+    waybar      # from both lists
+    wlogout
+    grim
+    grimblast-git
+    slurp
+    cliphist
+    niri        # from your home.nix
+    waypaper
+    wofi        # from your home.nix
+    rofi
+    rofi-wayland
+    nwg-look
+    nwg-dock-hyprland
+    uwsm
+    xdg-desktop-portal-hyprland
+    xdg-desktop-portal-gtk
+
+    # ========== Utilities ==========
+    wget
+    rsync
+    unzip
+    gum
+    jq
+    xclip
+    fastfetch
+    fzf
+    figlet
+    power-profiles-daemon
+    inotify-tools   # from your home.nix
+    brightnessctl   # from both lists
+    playerctl       # from your home.nix
+    tumbler
+    flatpak
+    #checkupdates-with-aur
+
+    # ========== Terminals/CLI ==========
+    kitty
+    neovim
+    htop
+    zsh
+    zsh-completions
+    eza
+
+    # ========== Networking ==========
+    network-manager-applet
+    nm-connection-editor
+    blueman
+    gvfs
+
+    # ========== File Management ==========
+    kdePackages.dolphin   # from your home.nix
+    pacseek
+
+    # ========== Python & Dev ==========
+    git
+    python-pip
+    python-gobject
+    python-screeninfo
+    python-pywalfox
+    rust
+    cargo
+
+    # ========== Fonts, Icons, Themes ==========
+    noto-fonts
+    noto-fonts-emoji
+    noto-fonts-color-emoji   # from your home.nix
+    noto-fonts-cjk
+    noto-fonts-cjk-sans      # from your home.nix
+    noto-fonts-extra
+    font-awesome             # from your home.nix
+    otf-font-awesome
+    ttf-dejavu
+    ttf-fira-sans
+    ttf-fira-code
+    ttf-firacode-nerd
+    papirus-icon-theme
+    breeze
+    bibata-cursor-theme-bin
+
+    # ========== GTK/Qt/Graphical Toolkit ==========
+    gtk4
+    qt5-wayland
+    qt6-wayland
+    qt6ct
+    libadwaita
+
+    # ========== Media, Audio & Video ==========
+    pipewire              # from your home.nix
+    pavucontrol
+    vlc
+    imagemagick
+
+    # ========== Misc/Other ==========
+    polkit-gnome
+    fuse2
+    xdg-user-dirs
+
   ];
+
 
   systemd.user.services.autogitpush = {
     Unit = {
