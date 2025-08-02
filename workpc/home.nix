@@ -106,6 +106,7 @@
     pavucontrol
     vlc
     imagemagick
+    bluez
 
     # ========== Misc/Other ==========
     #polkit-gnome            # CAUSE ERROR
