@@ -59,6 +59,7 @@
     zsh
     zsh-completions
     eza
+    fwupd
 
     # ========== Networking ==========
     networkmanagerapplet
