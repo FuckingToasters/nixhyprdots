@@ -233,6 +233,10 @@
     xwayland.enable = true;
     systemd.enable = true;
 
+    extraConfig = builtins.readFile "/home/henrikp/.mydotfiles/com.ml4w.dotfiles.stable/.config/hypr/hyprland.conf";
+      # now Home Manager will write your file content itself
+    };
+
     #extraConfig = ''
      # monitor=,preferred,auto,auto
 
