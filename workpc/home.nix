@@ -83,18 +83,16 @@
     noto-fonts
     noto-fonts-emoji
     noto-fonts-color-emoji   # from your home.nix
-    #noto-fonts-cjk 	     # RENAMED TO noto-fonts-cjk-sans
     noto-fonts-cjk-sans      # from your home.nix
     noto-fonts-extra
     font-awesome             # from your home.nix
-    #otf-font-awesome        # CAUSE ERROR
-    #ttf-dejavu              # CAUSE ERROR
-    #ttf-fira-sans           # CAUSE ERROR
-    #ttf-fira-code           # CAUSE ERROR
-    #ttf-firacode-nerd       # CAUSE ERROR
+    dejavu_fonts
+    fira-sans
+    fira-code
+    nerd-fonts.fira-code
     papirus-icon-theme
-    #breeze                  # CAUSE ERROR
-    #bibata-cursor-theme-bin # CAUSE ERROR
+    kdePackages.breeze
+    bibata-cursors
 
     # ========== GTK/Qt/Graphical Toolkit ==========
     gtk4
