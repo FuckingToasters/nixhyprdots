@@ -8,6 +8,8 @@
         inputs.nixpkgs.follows = "nixpkgs";
     };
     bzmenu.url = "github:e-tho/bzmenu";
+    iwmenu.url = "github:e-tho/iwmenu";
+    pwmenu.url = "github:e-tho/pwmenu";
   };
 
   outputs =
