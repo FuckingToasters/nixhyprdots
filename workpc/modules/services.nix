@@ -1,7 +1,6 @@
 { config, pkgs, ... }:
 
 {
-  hardware.bluetooth.enable = true;
   services.connman = {
     enable = true;
     wifi.backend = "iwd";

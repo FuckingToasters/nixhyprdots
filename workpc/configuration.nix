@@ -16,6 +16,8 @@
   boot.kernelPackages = pkgs.linuxPackages_latest;
   hardware.firmware = [ pkgs.linux-firmware ];
   hardware.firmwareCompression = "none";
+  hardware.bluetooth.enable = true;
+  hardware.bluetooth.powerOnBoot = true;
 
   networking.hostName = "workpc"; # Define your hostname.
   #networking.networkmanager.enable = true;
