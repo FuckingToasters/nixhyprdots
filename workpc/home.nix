@@ -150,7 +150,7 @@
   };
 
   programs.home-manager.enable = true;
-  programs.kitty.enable = true;
+  #programs.kitty.enable = true;
   programs.firefox.enable = true;
   programs.wofi.enable = true;
   programs.waybar.enable = true;
