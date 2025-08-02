@@ -15,7 +15,8 @@
   boot.loader.efi.canTouchEfiVariables = true;
   boot.kernelPackages = pkgs.linuxPackages_latest;
   networking.hostName = "workpc"; # Define your hostname.
-  networking.networkmanager.enable = true;
+  #networking.networkmanager.enable = true;
+  networking.wireless.iwd.enable = true;
 
   time.timeZone = "Europe/Berlin";
   i18n.defaultLocale = "en_US.UTF-8";
