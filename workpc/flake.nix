@@ -20,6 +20,7 @@
             ./modules/apps.nix
             ./modules/services.nix
             ./modules/filesystem.nix
+            ./modules/misc.nix
 	    nix-flatpak.nixosModules.nix-flatpak
 	    home-manager.nixosModules.home-manager
           ];
