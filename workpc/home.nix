@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, ... }:
+{ config, pkgs, ... }:
 
 {
   home.username = "henrikp";
@@ -51,7 +51,6 @@
     #checkupdates-with-aur
     qalculate-qt
     thunderbird
-    inputs.bzmenu.packages.${pkgs.system}.default
 
     # ========== Terminals/CLI ==========
     kitty
