@@ -87,17 +87,17 @@
     font-awesome             # from your home.nix
     #otf-font-awesome        # CAUSE ERROR
     #ttf-dejavu              # CAUSE ERROR
-    ttf-fira-sans
-    ttf-fira-code
-    ttf-firacode-nerd
+    #ttf-fira-sans           # CAUSE ERROR
+    #ttf-fira-code           # CAUSE ERROR
+    #ttf-firacode-nerd       # CAUSE ERROR
     papirus-icon-theme
-    breeze
-    bibata-cursor-theme-bin
+    #breeze                  # CAUSE ERROR
+    #bibata-cursor-theme-bin # CAUSE ERROR
 
     # ========== GTK/Qt/Graphical Toolkit ==========
     gtk4
-    qt5-wayland
-    qt6-wayland
+    #qt5-wayland             # CAUSE ERROR
+    #qt6-wayland             # CAUSE ERROR
     qt6ct
     libadwaita
 
@@ -108,7 +108,7 @@
     imagemagick
 
     # ========== Misc/Other ==========
-    polkit-gnome
+    #polkit-gnome            # CAUSE ERROR
     fuse2
     xdg-user-dirs
 
