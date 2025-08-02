@@ -24,7 +24,7 @@
     niri        # from your home.nix
     waypaper
     wofi        # from your home.nix
-    #rofi       # USING OTHER ROFI
+    fuzzel
     rofi-wayland
     nwg-look
     nwg-dock-hyprland
