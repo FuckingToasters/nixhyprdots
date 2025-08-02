@@ -24,7 +24,7 @@
     niri        # from your home.nix
     waypaper
     wofi        # from your home.nix
-    rofi
+    #rofi       # USING OTHER ROFI
     rofi-wayland
     nwg-look
     nwg-dock-hyprland
@@ -74,7 +74,7 @@
     #python-gobject       # CAUSE ERROR
     #python-screeninfo    # CAUSE ERROR
     #python-pywalfox      # CAUSE ERROR
-    rust
+    rustc
     cargo
 
     # ========== Fonts, Icons, Themes ==========
