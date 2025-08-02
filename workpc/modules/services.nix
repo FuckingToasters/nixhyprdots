@@ -1,6 +1,7 @@
 { config, pkgs, ... }:
 
 {
+  services.blueman.enable = true;  
   services.printing.enable = true;
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
