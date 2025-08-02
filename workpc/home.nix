@@ -46,7 +46,7 @@
     inotify-tools   # from your home.nix
     brightnessctl   # from both lists
     playerctl       # from your home.nix
-    tumbler
+    #tumbler        # CAUSE ERROR
     flatpak
     #checkupdates-with-aur
 
@@ -59,18 +59,18 @@
     eza
 
     # ========== Networking ==========
-    network-manager-applet
-    nm-connection-editor
+    networkmanagerapplet
+    #nm-connection-editor   # CAUSE ERROR
     blueman
     gvfs
 
     # ========== File Management ==========
     kdePackages.dolphin   # from your home.nix
-    pacseek
+    #pacseek              # CAUSE ERROR
 
     # ========== Python & Dev ==========
     git
-    python-pip
+    #python-pip           # CAUSE ERROR
     python-gobject
     python-screeninfo
     python-pywalfox
