@@ -160,12 +160,12 @@
     shellAliases = {
       ll = "ls -l";
       gst = "git status";
-      UU = "sudo nix-channel --update && sudo nixos-rebuild switch --flake ~/dotfiles/workpc --upgrade";
+      nixupch = "sudo nix-channel --update";
       nixconfig = "sudo nano ~/dotfiles/workpc/configuration.nix";
       hyprconfig = "sudo nano ~/.config/hypr/hyprland.conf";
       hyprbinds = "sudo nano ~/.config/hypr/conf/keybindings/default_modified.conf";
       nixapps = "sudo nano ~/dotfiles/workpc/modules/apps.nix";
-      rebuild = "sudo nixos-rebuild switch --flake ~/dotfiles/workpc";
+      rebuild = "nixupch && sudo nixos-rebuild switch --flake ~/dotfiles/workpc --upgrade";
       cleanup = "sudo nix-collect-garbage";
       xclip = "xclip -selection clipboard";
       printnix = "sudo cat ~/dotfiles/workpc/configuration.nix | xclip";
