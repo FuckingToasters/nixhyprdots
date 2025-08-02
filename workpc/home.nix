@@ -14,11 +14,11 @@
     hyprpicker
     hyprshade
     swaylock    # from your home.nix
-    swaync
+    #swaync     # CAUSE ERROR
     waybar      # from both lists
     wlogout
     grim
-    grimblast-git
+    #grimblast-git # CAUSE ERROR
     slurp
     cliphist
     niri        # from your home.nix
