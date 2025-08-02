@@ -14,7 +14,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.kernelPackages = pkgs.linuxPackages_latest;
-  hardware.enableAllFirmware = true;
+  hardware.firmware = [ pkgs.linux-firmware ];
   hardware.firmware.uncompressed = true;
 
   networking.hostName = "workpc"; # Define your hostname.
