@@ -62,7 +62,7 @@
 
     # ========== Networking ==========
     networkmanagerapplet
-    #nm-connection-editor   # CAUSE ERROR
+    iwd
     blueman
     gvfs
 
