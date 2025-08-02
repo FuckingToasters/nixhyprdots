@@ -228,14 +228,10 @@
 
 
   # Compact Hyprland config using extraConfig
-  wayland.windowManager.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-    systemd.enable = true;
-
-    extraConfig = builtins.readFile "/home/henrikp/.mydotfiles/com.ml4w.dotfiles.stable/.config/hypr/hyprland.conf";
-      # now Home Manager will write your file content itself
-    };
+  #wayland.windowManager.hyprland = {
+    #enable = true;
+    #xwayland.enable = true;
+    #systemd.enable = true;
 
     #extraConfig = ''
      # monitor=,preferred,auto,auto
@@ -406,6 +402,6 @@
       #windowrule = suppressevent maximize, class:.*
       #windowrule = nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0
     #'';
-  };
+  #};
 
 }
