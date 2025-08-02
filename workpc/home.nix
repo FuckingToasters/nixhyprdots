@@ -403,4 +403,11 @@
       windowrule = nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0
     '';
   };
+
+  # ---- override the generated file with your dot-files version ----
+  home.file.".config/hypr/hyprland.conf" = lib.mkForce {
+    source = "/home/henrikp/.mydotfiles/com.ml4w.dotfiles.stable/.config/hypr/hyprland.conf";
+    # recursive = false   # default; only the file, not the dir
+  };
+
 }
