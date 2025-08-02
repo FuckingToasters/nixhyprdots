@@ -13,7 +13,7 @@
   
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  boot.kernelPackages = pkgs.linuxPackages_6.11.3;
+  boot.kernelPackages = pkgs.linuxPackages_lts;
   hardware.firmware = [ pkgs.linux-firmware ];
   hardware.firmwareCompression = "none";
   hardware.bluetooth.enable = true;
