@@ -166,7 +166,7 @@
       hyprconfig = "sudo nano ~/.config/hypr/hyprland.conf";
       hyprbinds = "sudo nano ~/.config/hypr/conf/keybindings/default_modified.conf";
       nixapps = "sudo nano ~/dotfiles/workpc/modules/apps.nix";
-      rebuild = "nixupch && sudo nixos-rebuild switch --flake ~/dotfiles/workpc --upgrade";
+      rebuild = "sudo nixos-rebuild switch --flake ~/dotfiles/workpc";
       cleanup = "sudo nix-collect-garbage";
       xclip = "xclip -selection clipboard";
       printnix = "sudo cat ~/dotfiles/workpc/configuration.nix | xclip";
