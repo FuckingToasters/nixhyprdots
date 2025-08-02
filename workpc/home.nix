@@ -160,7 +160,7 @@
     shellAliases = {
       ll = "ls -l";
       gst = "git status";
-      UU = "sudo nix-channel --update && sudo nixos-rebuild switch --upgrade";
+      UU = "sudo nix-channel --update && sudo nixos-rebuild switch --flake ~/dotfiles/workpc --upgrade";
       nixconfig = "sudo nano ~/dotfiles/workpc/configuration.nix";
       hyprconfig = "sudo nano ~/.config/hypr/hyprland.conf";
       hyprbinds = "sudo nano ~/.config/hypr/conf/keybindings/default_modified.conf";
