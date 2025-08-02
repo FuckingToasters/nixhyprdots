@@ -162,6 +162,7 @@
       UU = "sudo nix-channel --update && sudo nixos-rebuild switch --upgrade";
       nixconfig = "sudo nano ~/dotfiles/workpc/configuration.nix";
       hyprconfig = "sudo nano ~/.config/hypr/hyprland.conf";
+      hyprbinds = "sudo nano ~/.config/hypr/conf/keybindings/default_modified.conf";
       nixapps = "sudo nano ~/dotfiles/workpc/modules/apps.nix";
       rebuild = "sudo nixos-rebuild switch --flake ~/dotfiles/workpc";
       cleanup = "sudo nix-collect-garbage";
