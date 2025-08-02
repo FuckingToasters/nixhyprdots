@@ -49,6 +49,8 @@
     #tumbler        # CAUSE ERROR
     flatpak
     #checkupdates-with-aur
+    qalculate-qt
+    thunderbird
 
     # ========== Terminals/CLI ==========
     kitty
@@ -162,6 +164,7 @@
       UU = "sudo nix-channel --update && sudo nixos-rebuild switch --upgrade";
       nixconfig = "sudo nano ~/dotfiles/workpc/configuration.nix";
       hyprconfig = "sudo nano ~/.config/hypr/hyprland.conf";
+      nixapps = "sudo nano ~/dotfiles/workpc/modules/apps.nix";
       rebuild = "sudo nixos-rebuild switch --flake ~/dotfiles/workpc";
       cleanup = "sudo nix-collect-garbage";
       xclip = "xclip -selection clipboard";
