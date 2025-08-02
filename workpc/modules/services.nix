@@ -2,6 +2,10 @@
 
 {
   hardware.bluetooth.enable = true;
+  services.connman = {
+    enable = true;
+    wifi.backend = "iwd";
+  };
   services.blueman.enable = true;  
   services.printing.enable = true;
   services.pulseaudio.enable = false;
