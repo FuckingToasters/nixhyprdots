@@ -29,6 +29,7 @@
   nix.settings.experimental-features =[ "flakes" "nix-command" ];
 
   environment.variables.KITTY_CONFIG_DIRECTORY = "~/.config/kitty";
+  environment.systemPackages = [ pkgs.bzmenu ];
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
