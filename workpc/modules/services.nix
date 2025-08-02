@@ -6,6 +6,7 @@
     enable = true;
     wifi.backend = "iwd";
   };
+  services.fwupd.enable = true;
   services.blueman.enable = true;  
   services.printing.enable = true;
   services.pulseaudio.enable = false;
