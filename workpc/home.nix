@@ -117,8 +117,7 @@
       nixmanager = "sudo nano ~/dotfiles/workpc/home.nix";
       nixapps = "sudo nano ~/dotfiles/workpc/modules/apps.nix";
       nixservices = "sudo nano ~/dotfiles/workpc/modules/services.nix";
-      nixfilesystem = "sudo nano ~/dotfiles/workpc/modules/filesystem.nix";
-      hyprscripts = "sudo nano ~/.config/hypr/scripts/"; # need filename param      
+      nixfilesystem = "sudo nano ~/dotfiles/workpc/modules/filesystem.nix";      
       cavaconfig = "nano ~/.config/cava/config";
       hyprconfig = "sudo nano ~/.config/hypr/hyprland.conf";
       hyprbinds = "sudo nano ~/.config/hypr/conf/keybindings/default_modified.conf";
@@ -129,6 +128,17 @@
       df = "df -h";
       c = "clear";
     };
+
+    initExtra = ''
+      hyprscripts() {
+        if [ $# -eq 0 ]; then
+          echo "Usage: hyprscripts <filename>"
+          ls "~/.config/hypr/scripts/"
+          return 1
+        fi
+        sudo nano ~/.config/hypr/scripts/"$1"
+      }
+    '';
   };
 
   programs.git = {
