@@ -11,7 +11,6 @@
     rsync
     unzip
     jq
-    xclip
     fastfetch
     fzf
     figlet
