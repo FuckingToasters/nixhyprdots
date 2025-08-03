@@ -114,8 +114,6 @@
 	#"com.heroicgameslauncher.hgl"
 	"io.github.dvlv.boxbuddyrs"
 	"com.vscodium.codium"
-        "com.ml4w.dotfilesinstaller"
-        "com.ml4w.settings"
 
   ];
 }
