@@ -133,10 +133,10 @@
       hyprscripts() {
         if [ $# -eq 0 ]; then
           echo "Usage: hyprscripts <filename>"
-          ls "$HOME/.config/hypr/scripts/"
+          ls "${config.home.homeDirectory}/.config/hypr/scripts/"
           return 1
         fi
-        sudo nano $HOME/.config/hypr/scripts/"$1"
+        sudo nano ${config.home.homeDirectory}/.config/hypr/scripts/"$1"
       }
     '';
   };
