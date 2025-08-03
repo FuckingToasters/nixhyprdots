@@ -70,7 +70,7 @@
     };
     Service = {
       Type = "oneshot";
-      ExecStart = "${pkgs.bash}/bin/bash -c 'cd ${config.home.homeDirectory}/dotfiles && git add . && git commit -m \"Auto-commit: $(date)\" && git push || true'";
+      ExecStart = "${pkgs.bash}/bin/bash -c 'cd ${config.home.homeDirectory}/dotfiles && git add . && git commit -m \"Auto-commit: $(date)\"; git push' >> /tmp/autogitpush.log 2>&1";
     };
   };
 
