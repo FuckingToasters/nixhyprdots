@@ -146,8 +146,8 @@
   services.flatpak.packages = [
     "com.obsproject.Studio"
     "com.ticktick.TickTick"
-    "com.vivaldi.Vivaldi"
-    "org.gimp.GIMP"
+    #"com.vivaldi.Vivaldi"
+    #"org.gimp.GIMP"
     "us.zoom.Zoom"
     "page.codeberg.libre_menu_editor.LibreMenuEditor"
     #"com.heroicgameslauncher.hgl"
