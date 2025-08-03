@@ -99,10 +99,10 @@
     nfs-utils
   ];
 
-  programs.steam = {
-   enable = true;
-   extraCompatPackages = [ pkgs.proton-ge-bin ];   
-  };
+  #programs.steam = {
+   #enable = true;
+   #extraCompatPackages = [ pkgs.proton-ge-bin ];   
+  #};
 
   services.flatpak.packages = [
     "com.obsproject.Studio"
@@ -111,8 +111,11 @@
 	"org.gimp.GIMP"
 	"us.zoom.Zoom"
 	"page.codeberg.libre_menu_editor.LibreMenuEditor"
-	"com.heroicgameslauncher.hgl"
+	#"com.heroicgameslauncher.hgl"
 	"io.github.dvlv.boxbuddyrs"
 	"com.vscodium.codium"
+        "com.ml4w.dotfilesinstaller"
+        "com.ml4w.settings"
+
   ];
 }
