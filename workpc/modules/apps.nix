@@ -26,6 +26,7 @@
     wlogout
     grim
     slurp
+    wl-clipboard
     cliphist
     niri
     waypaper
@@ -89,6 +90,7 @@
 
     # ========== System Utilities ==========
     gum
+    xclip
     power-profiles-daemon
     brightnessctl
     playerctl
