@@ -5,87 +5,8 @@
     isNormalUser = true;
     description = "Henrik Petersen";
     extraGroups = [ "networkmanager" "wheel" "input" ];
-    packages = with pkgs; [
-      # ========== Development Tools ==========
-      kdePackages.kate
-      rustup
-      gcc
-      zig
-      lua
-      hugo
-      libgcc
-
-      # ========== Media & Creative ==========
-      beets
-      streamcontroller
-      calibre
-      audacity
-      kdePackages.kdenlive
-      ffmpeg-full
-      mpv
-      tor-browser
-
-      # ========== System & Network ==========
-      libnotify
-      xwayland-satellite 
-      tmux
-      vorta
-      killall
-      ranger
-      curl
-      zoxide
-      borgbackup
-      trash-cli
-      util-linux
-      ncdu
-      kdePackages.kleopatra
-      caligula
-      distrobox
-      wireguard-tools
-
-      # ========== Desktop Apps ==========
-      discord
-      obsidian
-      nextcloud-client
-      libreoffice
-      kdePackages.yakuake
-
-      # ========== Terminal & Shell ==========
-      kitty
-      fish
-      oh-my-posh
-      bat
-      fd
-      btop
-      pulsemixer
-      stow
-
-      # ========== VPN & Network ==========
-      mullvad
-      mullvad-vpn
-      transmission_4-gtk
-
-      # ========== Python & Package Management ==========
-      python312Packages.pip
-      pipx
-      pywalfox-native
-      pywal16
-
-      # ========== Display & Wayland Tools ==========
-      wdisplays
-      wl-clipboard
-    ];
   };
-
-  # ========== System-wide Programs ==========
-  programs.virt-manager.enable = true;
-  programs.niri.enable = true;
-  programs.hyprland.enable = true;
-  programs.firefox.enable = true;
-  programs.nh.enable = true;
-
-  nixpkgs.config.allowUnfree = true;
-
+   
   # ========== System-wide Packages ==========
   environment.systemPackages = with pkgs; [
     # ========== Wayland/Hyprland & Desktop Environment ==========
@@ -117,6 +38,72 @@
     xdg-desktop-portal-gtk
     pyprland
     swww
+    wdisplays
+
+    # ========== Development Tools ==========
+    kdePackages.kate
+    rustup
+    gcc
+    zig
+    lua
+    hugo
+    libgcc
+
+    # ========== Media & Creative ==========
+    beets
+    streamcontroller
+    calibre
+    audacity
+    kdePackages.kdenlive
+    ffmpeg-full
+    mpv
+    tor-browser
+
+    # ========== System & Network ==========
+    libnotify
+    xwayland-satellite 
+    tmux
+    vorta
+    killall
+    ranger
+    curl
+    zoxide
+    borgbackup
+    trash-cli
+    util-linux
+    ncdu
+    kdePackages.kleopatra
+    caligula
+    distrobox
+    wireguard-tools
+
+    # ========== Desktop Apps ==========
+    discord
+    obsidian
+    nextcloud-client
+    libreoffice
+    kdePackages.yakuake
+
+    # ========== Terminal & Shell ==========
+    kitty
+    fish
+    oh-my-posh
+    bat
+    fd
+    btop
+    pulsemixer
+    stow
+
+    # ========== VPN & Network ==========
+    mullvad
+    mullvad-vpn
+    transmission_4-gtk
+
+    # ========== Python & Package Management ==========
+    python312Packages.pip
+    pipx
+    pywalfox-native
+    pywal16
 
     # ========== System Utilities ==========
     gum
@@ -158,6 +145,16 @@
     # ========== System Infrastructure ==========
     nfs-utils
   ];
+
+
+  # ========== System-wide Programs ==========
+  programs.virt-manager.enable = true;
+  programs.niri.enable = true;
+  programs.hyprland.enable = true;
+  programs.firefox.enable = true;
+  programs.nh.enable = true;
+
+  nixpkgs.config.allowUnfree = true;
 
   #programs.steam = {
    #enable = true;
