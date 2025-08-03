@@ -27,6 +27,7 @@
     zsh-completions
     eza
     fwupd
+    yazi
     cava
 
     # ========== File Management ==========
@@ -109,11 +110,17 @@
     shellAliases = {
       ll = "ls -l";
       gst = "git status";
+      gcm = "git commit";
+      gad = "git add";
       nixupch = "sudo nix-channel --update";
       nixconfig = "sudo nano ~/dotfiles/workpc/configuration.nix";
+      nixmanager = "sudo nano ~/dotfiles/workpc/home.nix";
+      nixapps = "sudo nano ~/dotfiles/workpc/modules/apps.nix";
+      nixservices = "sudo nano ~/dotfiles/workpc/modules/services.nix";
+      nixfilesystem = "sudo nano ~/dotfiles/workpc/modules/filesystem.nix";
+      cavaconfig = "nano ~/.config/cava/config";
       hyprconfig = "sudo nano ~/.config/hypr/hyprland.conf";
       hyprbinds = "sudo nano ~/.config/hypr/conf/keybindings/default_modified.conf";
-      nixapps = "sudo nano ~/dotfiles/workpc/modules/apps.nix";
       rebuild = "sudo nixos-rebuild switch --flake ~/dotfiles/workpc";
       cleanup = "sudo nix-collect-garbage";
       xclip = "xclip -selection clipboard";
