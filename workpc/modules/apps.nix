@@ -8,6 +8,7 @@
   };
    
   # ========== System-wide Packages ==========
+  nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
     # ========== Wayland/Hyprland & Desktop Environment ==========
     hyprland
@@ -133,8 +134,6 @@
   programs.hyprland.enable = true;
   programs.firefox.enable = true;
   programs.nh.enable = true;
-
-  nixpkgs.config.allowUnfree = true;
 
   #programs.steam = {
    #enable = true;

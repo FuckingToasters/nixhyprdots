@@ -4,6 +4,7 @@
   home.username = "henrikp";
   home.homeDirectory = "/home/henrikp";
   home.stateVersion = "25.05";
+  nixpkgs.config.allowUnfree = true; 
   home.packages = with pkgs; [
     # ========== Personal Utilities ==========
     wget
