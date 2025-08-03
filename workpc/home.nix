@@ -41,7 +41,7 @@
     vlc
     imagemagick
     tor-browser
-    mullvad-browser
+    #mullvad-browser
     audacity
     calibre
     streamcontroller
