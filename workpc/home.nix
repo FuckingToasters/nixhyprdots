@@ -118,6 +118,7 @@
       nixapps = "sudo nano ~/dotfiles/workpc/modules/apps.nix";
       nixservices = "sudo nano ~/dotfiles/workpc/modules/services.nix";
       nixfilesystem = "sudo nano ~/dotfiles/workpc/modules/filesystem.nix";
+      hyprscripts = "sudo cd ~/.config/hypr/scripts";      
       cavaconfig = "nano ~/.config/cava/config";
       hyprconfig = "sudo nano ~/.config/hypr/hyprland.conf";
       hyprbinds = "sudo nano ~/.config/hypr/conf/keybindings/default_modified.conf";
