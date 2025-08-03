@@ -49,15 +49,10 @@
     hugo
     libgcc
 
-    # ========== Media & Creative ==========
+    # ========== Media & Creative (System Tools) ==========
     beets
-    streamcontroller
-    calibre
-    audacity
-    kdePackages.kdenlive
     ffmpeg-full
     mpv
-    tor-browser
 
     # ========== System & Network ==========
     libnotify
@@ -72,17 +67,8 @@
     trash-cli
     util-linux
     ncdu
-    kdePackages.kleopatra
     caligula
-    distrobox
     wireguard-tools
-
-    # ========== Desktop Apps ==========
-    discord
-    obsidian
-    nextcloud-client
-    libreoffice
-    kdePackages.yakuake
 
     # ========== Terminal & Shell ==========
     kitty
@@ -93,11 +79,6 @@
     btop
     pulsemixer
     stow
-
-    # ========== VPN & Network ==========
-    mullvad
-    mullvad-vpn
-    transmission_4-gtk
 
     # ========== Python & Package Management ==========
     python312Packages.pip
@@ -145,7 +126,6 @@
     # ========== System Infrastructure ==========
     nfs-utils
   ];
-
 
   # ========== System-wide Programs ==========
   programs.virt-manager.enable = true;

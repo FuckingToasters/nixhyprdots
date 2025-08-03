@@ -38,11 +38,30 @@
     # ========== Media & Personal Apps ==========
     vlc
     imagemagick
+    tor-browser
+    audacity
+    calibre
+    streamcontroller
+    kdePackages.kdenlive
+
+    # ========== Personal Applications ==========
+    discord
+    obsidian
+    nextcloud-client
+    libreoffice
+    kdePackages.yakuake
+    transmission_4-gtk
+    distrobox
+
+    # ========== VPN & Network (User-specific) ==========
+    mullvad
+    mullvad-vpn
 
     # ========== Personal System Utils ==========
     fuse2
     xdg-user-dirs
     acpid
+    kdePackages.kleopatra
   ];
 
   systemd.user.services.autogitpush = {
