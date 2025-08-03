@@ -25,6 +25,7 @@
     waybar
     wlogout
     grim
+    grimblast
     slurp
     wl-clipboard
     cliphist
