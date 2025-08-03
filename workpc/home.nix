@@ -108,6 +108,7 @@
     vlc
     imagemagick
     bluez
+    acpid
 
     # ========== Misc/Other ==========
     #polkit-gnome            # CAUSE ERROR

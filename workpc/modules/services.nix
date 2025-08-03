@@ -9,6 +9,7 @@
   services.blueman.enable = true;  
   services.printing.enable = true;
   services.pulseaudio.enable = false;
+  services.acpid.enable = true;
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
