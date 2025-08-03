@@ -55,7 +55,6 @@
     distrobox
 
     # ========== VPN & Network (User-specific) ==========
-    mullvad
     mullvad-vpn
 
     # ========== Personal System Utils ==========
