@@ -54,7 +54,6 @@
     kdePackages.yakuake
     transmission_4-gtk
     distrobox
-    cavalier
 
     # ========== VPN & Network (User-specific) ==========
     mullvad-vpn
