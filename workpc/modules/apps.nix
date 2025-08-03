@@ -135,7 +135,7 @@
   programs.virt-manager.enable = true;
   programs.niri.enable = true;
   programs.hyprland.enable = true;
-  programs.firefox.enable = true;
+  #programs.firefox.enable = true;
   programs.nh.enable = true;
 
   #programs.steam = {
