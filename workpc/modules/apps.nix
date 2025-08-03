@@ -95,6 +95,7 @@
     power-profiles-daemon
     brightnessctl
     playerctl
+    kdePackages.kwallet
 
     # ========== Networking ==========
     networkmanagerapplet
