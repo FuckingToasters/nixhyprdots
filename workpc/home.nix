@@ -5,55 +5,21 @@
   home.homeDirectory = "/home/henrikp";
   home.stateVersion = "25.05";
   home.packages = with pkgs; [
-    # ========== Wayland/Hyprland & Related ==========
-    hyprland
-    hyprpaper
-    hyprpanel
-    hyprlock
-    hypridle
-    hyprpicker
-    hyprshade
-    swaylock    # from your home.nix
-    #swaync     # CAUSE ERROR
-    waybar      # from both lists
-    wlogout
-    grim
-    #grimblast-git # CAUSE ERROR
-    slurp
-    cliphist
-    niri        # from your home.nix
-    waypaper
-    wofi        # from your home.nix
-    fuzzel
-    rofi-wayland
-    nwg-look
-    nwg-dock-hyprland
-    uwsm
-    xdg-desktop-portal-hyprland
-    xdg-desktop-portal-gtk
-
-    # ========== Utilities ==========
+    # ========== Personal Utilities ==========
     wget
     rsync
     unzip
-    gum
     jq
     xclip
     fastfetch
     fzf
     figlet
-    power-profiles-daemon
-    inotify-tools   # from your home.nix
-    brightnessctl   # from both lists
-    playerctl       # from your home.nix
-    #tumbler        # CAUSE ERROR
+    inotify-tools
     flatpak
-    #checkupdates-with-aur
     qalculate-qt
     thunderbird
 
     # ========== Terminals/CLI ==========
-    kitty
     neovim
     htop
     zsh
@@ -61,62 +27,23 @@
     eza
     fwupd
 
-    # ========== Networking ==========
-    networkmanagerapplet
-    iwd
-    blueman
-    gvfs
-
     # ========== File Management ==========
-    kdePackages.dolphin   # from your home.nix
-    #pacseek              # CAUSE ERROR
+    kdePackages.dolphin
 
     # ========== Python & Dev ==========
     git
-    #python-pip           # CAUSE ERROR
-    #python-gobject       # CAUSE ERROR
-    #python-screeninfo    # CAUSE ERROR
-    #python-pywalfox      # CAUSE ERROR
     rustc
     cargo
 
-    # ========== Fonts, Icons, Themes ==========
-    noto-fonts
-    noto-fonts-emoji
-    noto-fonts-color-emoji   # from your home.nix
-    noto-fonts-cjk-sans      # from your home.nix
-    noto-fonts-extra
-    font-awesome             # from your home.nix
-    dejavu_fonts
-    fira-sans
-    fira-code
-    nerd-fonts.fira-code
-    papirus-icon-theme
-    kdePackages.breeze
-    bibata-cursors
-
-    # ========== GTK/Qt/Graphical Toolkit ==========
-    gtk4
-    #qt5-wayland             # CAUSE ERROR
-    #qt6-wayland             # CAUSE ERROR
-    qt6ct
-    libadwaita
-
-    # ========== Media, Audio & Video ==========
-    pipewire              # from your home.nix
-    pavucontrol
+    # ========== Media & Personal Apps ==========
     vlc
     imagemagick
-    bluez
-    acpid
 
-    # ========== Misc/Other ==========
-    #polkit-gnome            # CAUSE ERROR
+    # ========== Personal System Utils ==========
     fuse2
     xdg-user-dirs
-
+    acpid
   ];
-
 
   systemd.user.services.autogitpush = {
     Unit = {
