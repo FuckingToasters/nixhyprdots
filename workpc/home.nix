@@ -57,6 +57,7 @@
     kdePackages.yakuake
     transmission_4-gtk
     distrobox
+    teams
 
     # ========== VPN & Network (User-specific) ==========
     mullvad-vpn
