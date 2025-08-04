@@ -20,12 +20,14 @@
   };
 
   dconf.settings = {
-    "org/gnome/desktop/interface" = {
-      color-scheme = "prefer-dark";        # For GTK4 apps
-      gtk-theme = "Catppuccin-Macchiato-Compact-Blue-Dark";         # For GTK3 (optional, but helps)
-    };
+     "org/gnome/desktop/interface" = {
+       gtk-theme = "Catppuccin-Macchiato-Compact-Blue-Dark";
+       icon-theme = "Papirus-Dark";
+       cursor-theme = "Catppuccin-Mocha-Dark-Cursors";
+       cursor-size = 24;
+       color-scheme = "prefer-dark"; # optional: helps with apps that support it
+     };
   };
-
  
   home.packages = with pkgs; [
     # ========== Personal Utilities ==========
