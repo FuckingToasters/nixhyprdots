@@ -132,8 +132,10 @@
     initExtra = ''
       hyprscripts() {
         if [ $# -eq 0 ]; then
+          echo "==== hypr/scripts ===="
           echo "Usage: hyprscripts <filename>"
           ls "/home/henrikp/.config/hypr/scripts/"
+
           return 1
         fi
         nano /home/henrikp/.config/hypr/scripts/"$1"
