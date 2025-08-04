@@ -1,10 +1,15 @@
 { config, pkgs, ... }:
 
 {
+  nixpkgs.config.allowUnfree = true;
   home.username = "henrikp";
   home.homeDirectory = "/home/henrikp";
   home.stateVersion = "25.05";
-  nixpkgs.config.allowUnfree = true; 
+  home.sessionVariables = {
+    QT_QPA_PLATFORMTHEME = "qt5ct";
+    QT_STYLE_OVERRIDE = "kvantum";
+    QT_QPA_PLATFORM = "wayland";
+  }; 
   home.packages = with pkgs; [
     # ========== Personal Utilities ==========
     wget
@@ -100,13 +105,6 @@
         emoji = ["Noto Color Emoji"];
      };
   }
-
-  # --- Ensure environment variables are set for theming ---
-  home.sessionVariables = {
-    QT_QPA_PLATFORMTHEME = "qt5ct";
-    QT_STYLE_OVERRIDE = "kvantum";
-    QT_QPA_PLATFORM = "wayland";
-  };
 
   # --- Example Kvantum theme setup (optional, for better Qt consistency) ---
   # You can reference your preferred Kvantum theme or use a system one.
