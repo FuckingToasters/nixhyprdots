@@ -18,6 +18,7 @@
     flatpak
     qalculate-qt
     thunderbird
+    localsend
 
     # ========== Terminals/CLI ==========
     neovim
