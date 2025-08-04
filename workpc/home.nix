@@ -99,6 +99,55 @@
         sansSerif = [ "Noto Sans" "FontAwesome" ];
         emoji = ["Noto Color Emoji"];
      };
+  }
+
+  # --- Ensure environment variables are set for theming ---
+  home.sessionVariables = {
+    QT_QPA_PLATFORMTHEME = "qt5ct";
+    QT_STYLE_OVERRIDE = "kvantum";
+    QT_QPA_PLATFORM = "wayland";
+  };
+
+  # --- Example Kvantum theme setup (optional, for better Qt consistency) ---
+  # You can reference your preferred Kvantum theme or use a system one.
+  xdg.configFile = {
+    "Kvantum/kvantum.kvconfig".text = ''
+      [General]
+      theme=Catppuccin-Macchiato
+    '';
+  };
+
+  # --- GTK Theme Configuration ---
+  programs.gtk = {
+    enable = true;
+    theme = {
+      package = pkgs.catppuccin-gtk;    # or pkgs.adw-gtk3, pkgs.breeze-gtk, etc.
+      name = "Catppuccin-Macchiato-Compact-Blue-Dark";  # Check available variants or replace with what you prefer
+    };
+    iconTheme = {
+      package = pkgs.papirus-icon-theme; # or your favorite
+      name = "Papirus-Dark";
+    };
+    cursorTheme = {
+      package = pkgs.catppuccin-cursors;
+      name = "Catppuccin-Mocha-Dark-Cursors";
+      size = 24;
+    };
+    gtk3.extraConfig = {
+      gtk-application-prefer-dark-theme = true;
+    };
+  };
+
+  # --- Qt Theme Configuration ---
+  programs.qt = {
+    enable = true;
+    style = {
+      package = pkgs.libsForQt5.qtstyleplugin-kvantum;  # Modern customizable style
+      name = "kvantum";
+    };
+    platformTheme = {
+      name = "qt5ct";    # Can also use "kde" if you prefer KDE Integration
+    };
   };
 
   programs.home-manager.enable = true;
