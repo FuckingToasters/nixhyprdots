@@ -9,6 +9,14 @@
     QT_QPA_PLATFORMTHEME = "qt5ct";
     QT_STYLE_OVERRIDE = "kvantum";
     QT_QPA_PLATFORM = "wayland";
+  };
+  # --- Example Kvantum theme setup (optional, for better Qt consistency) ---
+  # You can reference your preferred Kvantum theme or use a system one.
+  xdg.configFile = {
+    "Kvantum/kvantum.kvconfig".text = ''
+      [General]
+      theme=Catppuccin-Macchiato
+    '';
   }; 
   home.packages = with pkgs; [
     # ========== Personal Utilities ==========
@@ -104,19 +112,10 @@
         sansSerif = [ "Noto Sans" "FontAwesome" ];
         emoji = ["Noto Color Emoji"];
      };
-  }
-
-  # --- Example Kvantum theme setup (optional, for better Qt consistency) ---
-  # You can reference your preferred Kvantum theme or use a system one.
-  xdg.configFile = {
-    "Kvantum/kvantum.kvconfig".text = ''
-      [General]
-      theme=Catppuccin-Macchiato
-    '';
   };
 
   # --- GTK Theme Configuration ---
-  programs.gtk = {
+  gtk = {
     enable = true;
     theme = {
       package = pkgs.catppuccin-gtk;    # or pkgs.adw-gtk3, pkgs.breeze-gtk, etc.
@@ -137,7 +136,7 @@
   };
 
   # --- Qt Theme Configuration ---
-  programs.qt = {
+  qt = {
     enable = true;
     style = {
       package = pkgs.libsForQt5.qtstyleplugin-kvantum;  # Modern customizable style
@@ -163,7 +162,7 @@
       gcm = "git commit";
       gad = "git add";
       nixupch = "sudo nix-channel --update";
-      nixflake = "nano ~/dotfiles/workpc/flake.nix"
+      nixflake = "nano ~/dotfiles/workpc/flake.nix";
       nixconfig = "nano ~/dotfiles/workpc/configuration.nix";
       nixman = "nano ~/dotfiles/workpc/home.nix";
       nixapps = "nano ~/dotfiles/workpc/modules/apps.nix";
