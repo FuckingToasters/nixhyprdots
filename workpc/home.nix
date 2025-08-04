@@ -27,7 +27,7 @@
   dconf.settings = {
      "org/gnome/desktop/interface" = {
        gtk-theme = "Catppuccin-Macchiato-Compact-Blue-Dark";
-       icon-theme = "Papirus-Dark";
+       icon-theme = "Papirus-Nord";
        cursor-theme = "Catppuccin-Mocha-Dark-Cursors";
        cursor-size = 24;
        color-scheme = "prefer-dark"; # optional: helps with apps that support it
@@ -35,6 +35,10 @@
   };
  
   home.packages = with pkgs; [
+    # ========== Theme Packages ===========
+    catppuccin-cursors # cursor theme
+    papirus-nord # icon theme
+
     # ========== Personal Utilities ==========
     wget
     rsync
@@ -138,8 +142,8 @@
       name = "Catppuccin-Macchiato-Compact-Blue-Dark";  # Check available variants or replace with what you prefer
     };
     iconTheme = {
-      package = pkgs.papirus-icon-theme; # or your favorite
-      name = "Papirus-Dark";
+      package = pkgs.papirus-nord; # or your favorite
+      name = "Papirus-Nord";
     };
     cursorTheme = {
       package = pkgs.catppuccin-cursors;
