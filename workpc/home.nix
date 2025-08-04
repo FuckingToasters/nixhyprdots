@@ -2,6 +2,7 @@
 
 {
   nixpkgs.config.allowUnfree = true;
+  home-manager.backupFileExtension = "hm-backup";
   home.username = "henrikp";
   home.homeDirectory = "/home/henrikp";
   home.stateVersion = "25.05";
