@@ -20,17 +20,6 @@
     /smssd *(rw,nohide,insecure,no_subtree_check,sync,all_squash,anonuid=1000,anongid=1000)
   '';
 
-   # Allow NFS & localsend traffic through the firewall
-   networking.firewall.allowedTCPPorts = [ 2049 111 53317 ];
-   networking.firewall.allowedUDPPorts = [ 2049 111 53317 ];
-   networking.firewall.allowedTCPPortRanges = [
-     { from = 32765; to = 32769; }
-   ];
-   networking.firewall.allowedUDPPortRanges = [
-     { from = 32765; to = 32769; }
-   ];
-
-
     fileSystems."/mnt/media" = {
       device = "192.168.86.202:/mnt/media";
       fsType = "nfs";

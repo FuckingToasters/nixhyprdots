@@ -116,11 +116,13 @@
       gcm = "git commit";
       gad = "git add";
       nixupch = "sudo nix-channel --update";
+      nixflake = "nano ~/dotfiles/workpc/flake.nix"
       nixconfig = "nano ~/dotfiles/workpc/configuration.nix";
       nixman = "nano ~/dotfiles/workpc/home.nix";
       nixapps = "nano ~/dotfiles/workpc/modules/apps.nix";
       nixservices = "nano ~/dotfiles/workpc/modules/services.nix";
-      nixfilesystem = "nano ~/dotfiles/workpc/modules/filesystem.nix";      
+      nixfilesystem = "nano ~/dotfiles/workpc/modules/filesystem.nix";
+      nixfirewall = "nano ~/dotfiles/workpc/modules/firewall.nix";      
       cavaconfig = "nano ~/.config/cava/config";
       hyprconfig = "nano ~/.config/hypr/hyprland.conf";
       hyprbinds = "nano ~/.config/hypr/conf/keybindings/default_modified.conf";
