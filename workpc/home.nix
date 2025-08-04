@@ -62,6 +62,7 @@
     fwupd
     yazi
     cava
+    neofetch
 
     # ========== File Management ==========
     kdePackages.dolphin
