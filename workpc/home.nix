@@ -123,6 +123,7 @@
       cavaconfig = "nano ~/.config/cava/config";
       hyprconfig = "nano ~/.config/hypr/hyprland.conf";
       hyprbinds = "nano ~/.config/hypr/conf/keybindings/default_modified.conf";
+      lsend = "localsend_app";      
       rebuild = "sudo nixos-rebuild switch --flake ~/dotfiles/workpc";
       cleanup = "sudo nix-collect-garbage";
       xclip = "xclip -selection clipboard";
