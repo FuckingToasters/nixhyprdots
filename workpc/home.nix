@@ -57,7 +57,7 @@
     kdePackages.yakuake
     transmission_4-gtk
     distrobox
-    teams
+    teams-for-linux
 
     # ========== VPN & Network (User-specific) ==========
     mullvad-vpn
@@ -131,6 +131,7 @@
       printnix = "cat ~/dotfiles/workpc/configuration.nix | xclip";
       df = "df -h";
       c = "clear";
+      teams = "teams-for-linux";
     };
 
     initExtra = ''
