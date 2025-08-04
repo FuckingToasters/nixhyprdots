@@ -113,18 +113,18 @@
       gcm = "git commit";
       gad = "git add";
       nixupch = "sudo nix-channel --update";
-      nixconfig = "sudo nano ~/dotfiles/workpc/configuration.nix";
-      nixmanager = "sudo nano ~/dotfiles/workpc/home.nix";
-      nixapps = "sudo nano ~/dotfiles/workpc/modules/apps.nix";
-      nixservices = "sudo nano ~/dotfiles/workpc/modules/services.nix";
-      nixfilesystem = "sudo nano ~/dotfiles/workpc/modules/filesystem.nix";      
+      nixconfig = "nano ~/dotfiles/workpc/configuration.nix";
+      nixmanager = "nano ~/dotfiles/workpc/home.nix";
+      nixapps = "nano ~/dotfiles/workpc/modules/apps.nix";
+      nixservices = "nano ~/dotfiles/workpc/modules/services.nix";
+      nixfilesystem = "nano ~/dotfiles/workpc/modules/filesystem.nix";      
       cavaconfig = "nano ~/.config/cava/config";
-      hyprconfig = "sudo nano ~/.config/hypr/hyprland.conf";
-      hyprbinds = "sudo nano ~/.config/hypr/conf/keybindings/default_modified.conf";
+      hyprconfig = "nano ~/.config/hypr/hyprland.conf";
+      hyprbinds = "nano ~/.config/hypr/conf/keybindings/default_modified.conf";
       rebuild = "sudo nixos-rebuild switch --flake ~/dotfiles/workpc";
       cleanup = "sudo nix-collect-garbage";
       xclip = "xclip -selection clipboard";
-      printnix = "sudo cat ~/dotfiles/workpc/configuration.nix | xclip";
+      printnix = "cat ~/dotfiles/workpc/configuration.nix | xclip";
       df = "df -h";
       c = "clear";
     };
@@ -136,13 +136,15 @@
           echo "Usage: hyprscripts <filename>"
           ls /home/henrikp/.config/hypr/scripts/
           echo "==== ml4w/settings ===="
-          ls /home/henrikp/.config/ml4w/settings/*.sh
+          ls /home/henrikp/.config/ml4w/settings/
           echo "==== ml4w/scripts ==== "
-          ls /home/henrikp/.config/ml4w/scripts/*.sh
+          ls /home/henrikp/.config/ml4w/scripts/
 
           return 1
         fi
-        nano /home/henrikp/.config/hypr/scripts/"$1"
+        nano /home/henrikp/.config/hypr/scripts/"$1
+        nano /home/henrikp/.config/ml4w/settings/"$1"
+        nano /home/henrikp/.config/ml4w/scripts/"$1"
       }
     '';
   };
