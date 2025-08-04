@@ -154,6 +154,7 @@
     "io.github.dvlv.boxbuddyrs"
     "com.vscodium.codium"
     "com.spotify.Client"
+    "org.kde.kate"
 
   ];
 }
