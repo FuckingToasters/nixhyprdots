@@ -123,7 +123,7 @@
      };
   };
 
-  # --- GTK Theme Configuration ---
+  # --- GTK Theme Configuration (Legacy for GTK2 and non-debconf GTK3 Apps)---
   gtk = {
     enable = true;
     theme = {
