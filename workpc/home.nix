@@ -46,7 +46,7 @@
     calibre
     streamcontroller
     kdePackages.kdenlive
-    spotify-qt
+    spotify
 
     # ========== Personal Applications ==========
     discord
@@ -115,7 +115,7 @@
       gad = "git add";
       nixupch = "sudo nix-channel --update";
       nixconfig = "nano ~/dotfiles/workpc/configuration.nix";
-      nixmanager = "nano ~/dotfiles/workpc/home.nix";
+      nixman = "nano ~/dotfiles/workpc/home.nix";
       nixapps = "nano ~/dotfiles/workpc/modules/apps.nix";
       nixservices = "nano ~/dotfiles/workpc/modules/services.nix";
       nixfilesystem = "nano ~/dotfiles/workpc/modules/filesystem.nix";      
