@@ -135,11 +135,11 @@
         if [ $# -eq 0 ]; then
           echo "==== hypr/scripts ===="
           echo "Usage: hyprscripts <filename>"
-          ls /home/henrikp/.config/hypr/scripts/
+          ls "/home/henrikp/.config/hypr/scripts/"
           echo "==== ml4w/settings ===="
-          ls /home/henrikp/.config/ml4w/settings/
+          ls "/home/henrikp/.config/ml4w/settings/"
           echo "==== ml4w/scripts ==== "
-          ls /home/henrikp/.config/ml4w/scripts/
+          ls "/home/henrikp/.config/ml4w/scripts/"
 
           return 1
         fi
