@@ -135,8 +135,10 @@
           echo "==== hypr/scripts ===="
           echo "Usage: hyprscripts <filename>"
           ls /home/henrikp/.config/hypr/scripts/
-          echo "==== m1/settings ===="
-          ls /home/henrikp/.config/m1/settings/*.sh
+          echo "==== ml4w/settings ===="
+          ls /home/henrikp/.config/ml4w/settings/*.sh
+          echo "==== ml4w/scripts ==== "
+          ls /home/henrikp/.config/ml4w/scripts/*.sh
 
           return 1
         fi
