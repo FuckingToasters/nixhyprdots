@@ -9,8 +9,6 @@
   home-manager.users.henrikp = {
     imports = [ ./home.nix ];
   };
-
-  backupFileExtension = "hm-backup";
   
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
