@@ -19,6 +19,11 @@
     '';
   };
 
+  # mv ~/.gtkrc-2.0 ~/.gtkrc-2.0.bak
+  # mv ~/.config/gtk-3.0/settings.ini ~/.config/gtk-3.0/settings.ini.bak
+  # mv ~/.config/gtk-4.0/gtk.css ~/.config/gtk-4.0/gtk.css.bak
+  # mv ~/.config/gtk-4.0/settings.ini ~/.config/gtk-4.0/settings.ini.bak
+
   dconf.settings = {
      "org/gnome/desktop/interface" = {
        gtk-theme = "Catppuccin-Macchiato-Compact-Blue-Dark";
