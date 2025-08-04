@@ -17,7 +17,16 @@
       [General]
       theme=Catppuccin-Macchiato
     '';
-  }; 
+  };
+
+  dconf.settings = {
+    "org/gnome/desktop/interface" = {
+      color-scheme = "prefer-dark";        # For GTK4 apps
+      gtk-theme = "Catppuccin-Macchiato-Compact-Blue-Dark";         # For GTK3 (optional, but helps)
+    };
+  };
+
+ 
   home.packages = with pkgs; [
     # ========== Personal Utilities ==========
     wget
