@@ -46,7 +46,7 @@
     calibre
     streamcontroller
     kdePackages.kdenlive
-    spotify
+    #spotify
 
     # ========== Personal Applications ==========
     discord

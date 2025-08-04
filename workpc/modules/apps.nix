@@ -153,6 +153,7 @@
     #"com.heroicgameslauncher.hgl"
     "io.github.dvlv.boxbuddyrs"
     "com.vscodium.codium"
+    "com.spotify.Client"
 
   ];
 }
