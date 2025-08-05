@@ -246,7 +246,7 @@
       c = "clear";
       teams = "teams-for-linux";
     };
-    initExtra    = ''
+    initContent = ''
      # run fastfetch on every interactive Bash start
      ${pkgs.fastfetch}/bin/fastfetch
 
