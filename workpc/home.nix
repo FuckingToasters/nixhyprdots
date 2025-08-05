@@ -265,10 +265,6 @@
         name = "zsh-syntax-highlighting";
         src = pkgs.zsh-syntax-highlighting;
       }
-      {
-       name = "fast-syntax-highlighting";
-       src = pkgs.fast-syntax-highlighting;
-      }
     ];
     shellAliases = {
       ll = "eza -lh --group-directories-first --icons";
