@@ -187,6 +187,7 @@
       gst = "git status";
       gcm = "git commit";
       gad = "git add";
+      ncdu = "ncdu --exclude=/mnt";
       nixupch = "sudo nix-channel --update";
       nixflake = "nano ~/dotfiles/workpc/flake.nix";
       nixconfig = "nano ~/dotfiles/workpc/configuration.nix";
@@ -259,6 +260,7 @@
       gst = "git status";
       gcm = "git commit";
       gad = "git add";
+      ncdu = "ncdu --exclude=/mnt";
       nixupch = "sudo nix-channel --update";
       nixflake = "nano ~/dotfiles/workpc/flake.nix";
       nixconfig = "nano ~/dotfiles/workpc/configuration.nix";
