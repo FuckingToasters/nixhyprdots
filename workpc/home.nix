@@ -278,7 +278,7 @@
         size = "16px";
       };
     };
-  }
+  };
 
 
   # Compact Hyprland config using extraConfig
@@ -458,4 +458,4 @@
     #'';
   #};
 
-}
+};
