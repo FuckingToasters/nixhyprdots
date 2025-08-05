@@ -1,5 +1,70 @@
 { config, pkgs, ... }:
 
+
+  let
+    myAliases = {
+      ll = "ls -l";
+      gst = "git status";
+      gcm = "git commit";
+      gad = "git add";
+      nixupch = "sudo nix-channel --update";
+      nixflake = "nano ~/dotfiles/workpc/flake.nix";
+      nixconfig = "nano ~/dotfiles/workpc/configuration.nix";
+      nixman = "nano ~/dotfiles/workpc/home.nix";
+      nixapps = "nano ~/dotfiles/workpc/modules/apps.nix";
+      nixservices = "nano ~/dotfiles/workpc/modules/services.nix";
+      nixfilesystem = "nano ~/dotfiles/workpc/modules/filesystem.nix";
+      nixfirewall = "nano ~/dotfiles/workpc/modules/firewall.nix";
+      cavaconfig = "nano ~/.config/cava/config";
+      hyprconfig = "nano ~/.config/hypr/hyprland.conf";
+      hyprbinds = "nano ~/.config/hypr/conf/keybindings/default_modified.conf";
+      lsend = "localsend_app";
+      rebuild = "sudo nixos-rebuild switch --flake ~/dotfiles/workpc";
+      cleanup = "sudo nix-collect-garbage";
+      xclip = "xclip -selection clipboard";
+      printnix = "cat ~/dotfiles/workpc/configuration.nix | xclip";
+      df = "df -h";
+      c = "clear";
+      teams = "teams-for-linux";
+    };
+
+    sharedInit = ''
+       # run fastfetch on every interactive Bash start
+       ${pkgs.fastfetch}/bin/fastfetch
+
+       # helper to open Hypr / ml4w scripts quickly
+       hyprscripts() {
+         if [ $# -eq 0 ]; then
+           echo "==== hypr/scripts ===="
+           echo "Usage: hyprscripts <filename>"
+           ls /home/henrikp/.config/hypr/scripts/
+           echo "==== ml4w/settings ===="
+           ls /home/henrikp/.config/ml4w/settings/
+           echo "==== ml4w/scripts ===="
+           ls /home/henrikp/.config/ml4w/scripts/
+           return 1
+         fi
+
+         nano /home/henrikp/.config/hypr/scripts/"$1"
+         nano /home/henrikp/.config/ml4w/settings/"$1"
+         nano /home/henrikp/.config/ml4w/scripts/"$1"
+      }
+    '';
+  in
+  {
+    programs.bash = {
+      enable       = true;
+      shellAliases = myAliases;
+      initExtra    = sharedInit;
+  };
+
+    programs.zsh = {
+      enable       = true;
+      shellAliases = myAliases;
+      initExtra    = sharedInit;
+    };
+  }
+
 {
   nixpkgs.config.allowUnfree = true;
   home.username = "henrikp";
@@ -168,70 +233,6 @@
     };
   };
 
-
-  let
-    myAliases = {
-      ll = "ls -l";
-      gst = "git status";
-      gcm = "git commit";
-      gad = "git add";
-      nixupch = "sudo nix-channel --update";
-      nixflake = "nano ~/dotfiles/workpc/flake.nix";
-      nixconfig = "nano ~/dotfiles/workpc/configuration.nix";
-      nixman = "nano ~/dotfiles/workpc/home.nix";
-      nixapps = "nano ~/dotfiles/workpc/modules/apps.nix";
-      nixservices = "nano ~/dotfiles/workpc/modules/services.nix";
-      nixfilesystem = "nano ~/dotfiles/workpc/modules/filesystem.nix";
-      nixfirewall = "nano ~/dotfiles/workpc/modules/firewall.nix";      
-      cavaconfig = "nano ~/.config/cava/config";
-      hyprconfig = "nano ~/.config/hypr/hyprland.conf";
-      hyprbinds = "nano ~/.config/hypr/conf/keybindings/default_modified.conf";
-      lsend = "localsend_app";      
-      rebuild = "sudo nixos-rebuild switch --flake ~/dotfiles/workpc";
-      cleanup = "sudo nix-collect-garbage";
-      xclip = "xclip -selection clipboard";
-      printnix = "cat ~/dotfiles/workpc/configuration.nix | xclip";
-      df = "df -h";
-      c = "clear";
-      teams = "teams-for-linux";
-    };
-
-    sharedInit = ''
-       # run fastfetch on every interactive Bash start
-       ${pkgs.fastfetch}/bin/fastfetch
-
-       # helper to open Hypr / ml4w scripts quickly
-       hyprscripts() {
-         if [ $# -eq 0 ]; then
-           echo "==== hypr/scripts ===="
-           echo "Usage: hyprscripts <filename>"
-           ls /home/henrikp/.config/hypr/scripts/
-           echo "==== ml4w/settings ===="
-           ls /home/henrikp/.config/ml4w/settings/
-           echo "==== ml4w/scripts ===="
-           ls /home/henrikp/.config/ml4w/scripts/
-           return 1
-         fi
-
-         nano /home/henrikp/.config/hypr/scripts/"$1"
-         nano /home/henrikp/.config/ml4w/settings/"$1"
-         nano /home/henrikp/.config/ml4w/scripts/"$1"
-      }
-    '';
-  in
-  {
-    programs.bash = {
-      enable       = true;
-      shellAliases = myAliases;
-      initExtra    = sharedInit;
-  };
-
-    programs.zsh = {
-      enable       = true;
-      shellAliases = myAliases;
-      initExtra    = sharedInit;
-  };
-}
 
 
 
