@@ -223,6 +223,11 @@
 
   programs.zsh = {
     enable       = true;
+    oh-my-zsh = {
+      enable = true;
+      theme = "robbyrussell"; # Or another OMZ theme you like
+      plugins = [ "git" "colored-man-pages" "sudo" ]; # Any OMZ plugin, space separated
+    };
     shellAliases = {
       ll = "ls -l";
       gst = "git status";
