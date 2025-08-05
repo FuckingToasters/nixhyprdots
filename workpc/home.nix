@@ -63,6 +63,10 @@
     yazi
     cava
     fastfetch
+    dust
+    procs
+    gping
+
 
     # ========== File Management ==========
     kdePackages.dolphin
