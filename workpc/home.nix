@@ -221,7 +221,11 @@
         nano /home/henrikp/.config/ml4w/settings/"$1"
         nano /home/henrikp/.config/ml4w/scripts/"$1"
       }
-    '';
+  };
+
+  programs.nh = {
+    enable = true;
+    flake = "/home/henrikp/.dotfiles";
   };
 
   programs.git = {
