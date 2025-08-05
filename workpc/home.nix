@@ -168,16 +168,9 @@
     };
   };
 
-  programs.home-manager.enable = true;
-  #programs.kitty.enable = true;
-  programs.firefox.enable = true;
-  programs.wofi.enable = true;
-  programs.waybar.enable = true;
-  programs.swaylock.enable = true;
 
-  programs.bash = {
-    enable = true;
-    shellAliases = {
+  let
+    myAliases = {
       ll = "ls -l";
       gst = "git status";
       gcm = "git commit";
@@ -203,7 +196,7 @@
       teams = "teams-for-linux";
     };
 
-    initExtra = ''
+    sharedInit = ''
        # run fastfetch on every interactive Bash start
        ${pkgs.fastfetch}/bin/fastfetch
 
@@ -224,8 +217,30 @@
          nano /home/henrikp/.config/ml4w/settings/"$1"
          nano /home/henrikp/.config/ml4w/scripts/"$1"
       }
-   '';
+    '';
+  in
+  {
+    programs.bash = {
+      enable       = true;
+      shellAliases = myAliases;
+      initExtra    = sharedInit;
   };
+
+    programs.zsh = {
+      enable       = true;
+      shellAliases = myAliases;
+      initExtra    = sharedInit;
+  };
+}
+
+
+
+  programs.home-manager.enable = true;
+  #programs.kitty.enable = true;
+  programs.firefox.enable = true;
+  programs.wofi.enable = true;
+  programs.waybar.enable = true;
+  programs.swaylock.enable = true;
 
   #programs.nh = {
     #enable = true;
