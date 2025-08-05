@@ -168,6 +168,8 @@
     };
   };
 
+  # mv ~/./.bashrc ~/./bashrc.bak
+  # mv ~/./.zshrc ~/./zshrc.bak
   programs.bash = {
     enable       = true;
     shellAliases = {
