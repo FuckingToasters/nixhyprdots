@@ -174,6 +174,8 @@
     enable       = true;
     shellAliases = {
       ll = "eza -lh --group-directories-first --icons";
+      la = "eza -la --group-directories-first --icons";
+      lt = "eza -lh --tree --icons";
       gst = "git status";
       gcm = "git commit";
       gad = "git add";
@@ -229,7 +231,9 @@
       plugins = [ "git" "colored-man-pages" "sudo" ]; # Any OMZ plugin, space separated
     };
     shellAliases = {
-      ll = "ls -l";
+      ll = "eza -lh --group-directories-first --icons";
+      la = "eza -la --group-directories-first --icons";
+      lt = "eza -lh --tree --icons";
       gst = "git status";
       gcm = "git commit";
       gad = "git add";
