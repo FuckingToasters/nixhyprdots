@@ -230,6 +230,20 @@
       theme = "robbyrussell"; # Or another OMZ theme you like
       plugins = [ "git" "colored-man-pages" "sudo" ]; # Any OMZ plugin, space separated
     };
+    plugins = [
+      {
+        name = "zsh-autosuggestions";
+        src = pkgs.zsh-autosuggestions;
+      }
+      {
+        name = "zsh-completions";
+        src = pkgs.zsh-completions;
+      }
+      {
+        name = "zsh-syntax-highlighting";
+        src = pkgs.zsh-syntax-highlighting;
+      }
+    ];
     shellAliases = {
       ll = "eza -lh --group-directories-first --icons";
       la = "eza -la --group-directories-first --icons";
