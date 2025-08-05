@@ -15,8 +15,7 @@
   xdg.configFile = {
     "Kvantum/kvantum.kvconfig".text = ''
       [General]
-      theme=Catppuccin-Macchiato
-    '';
+      theme=Catppuccin-Macchiato;
   };
 
   # mv ~/.gtkrc-2.0 ~/.gtkrc-2.0.bak
@@ -221,12 +220,13 @@
         nano /home/henrikp/.config/ml4w/settings/"$1"
         nano /home/henrikp/.config/ml4w/scripts/"$1"
       };
+    ;
   };
 
-  programs.nh = {
-    enable = true;
-    flake = "/home/henrikp/.dotfiles";
-  };
+  #programs.nh = {
+    #enable = true;
+    #flake = "/home/henrikp/.dotfiles";
+  #};
 
   programs.git = {
     enable = true;
