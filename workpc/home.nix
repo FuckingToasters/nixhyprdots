@@ -220,7 +220,7 @@
         nano /home/henrikp/.config/hypr/scripts/"$1"
         nano /home/henrikp/.config/ml4w/settings/"$1"
         nano /home/henrikp/.config/ml4w/scripts/"$1"
-      }
+      };
   };
 
   programs.nh = {
@@ -278,7 +278,7 @@
         size = "16px";
       };
     };
-  };
+  }
 
 
   # Compact Hyprland config using extraConfig
