@@ -204,6 +204,7 @@
     };
 
     initExtra = ''
+      ${pkgs.fastfetch}/bin/fastfetch
       hyprscripts() {
         if [ $# -eq 0 ]; then
           echo "==== hypr/scripts ===="
