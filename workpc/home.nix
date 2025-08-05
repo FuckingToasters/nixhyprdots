@@ -205,7 +205,7 @@
     initExtra = ''
       ${pkgs.fastfetch}/bin/fastfetch
       hyprscripts() {
-        if [ $# -eq 0 ]; then
+        if [ \$# -eq 0 ]; then
           echo "==== hypr/scripts ===="
           echo "Usage: hyprscripts <filename>"
           ls /home/henrikp/.config/hypr/scripts/
@@ -216,11 +216,11 @@
 
           return 1
         fi
-        nano /home/henrikp/.config/hypr/scripts/"$1"
-        nano /home/henrikp/.config/ml4w/settings/"$1"
-        nano /home/henrikp/.config/ml4w/scripts/"$1"
+        nano /home/henrikp/.config/hypr/scripts/"\$1"
+        nano /home/henrikp/.config/ml4w/settings/"\$1"
+        nano /home/henrikp/.config/ml4w/scripts/"\$1"
       }
-   '';
+e   '';
   };
 
   #programs.nh = {
