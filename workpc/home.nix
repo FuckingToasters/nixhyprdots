@@ -173,7 +173,7 @@
   programs.bash = {
     enable       = true;
     shellAliases = {
-      ll = "ls -l";
+      ll = "eza -lh --group-directories-first --icons";
       gst = "git status";
       gcm = "git commit";
       gad = "git add";
