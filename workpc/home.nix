@@ -220,7 +220,7 @@
         nano /home/henrikp/.config/ml4w/settings/"\$1"
         nano /home/henrikp/.config/ml4w/scripts/"\$1"
       }
-e   '';
+   '';
   };
 
   #programs.nh = {
