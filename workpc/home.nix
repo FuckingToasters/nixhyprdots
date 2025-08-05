@@ -66,7 +66,10 @@
     dust
     procs
     gping
-
+    curlie
+    doggo
+    delta
+    mcfly
 
     # ========== File Management ==========
     kdePackages.dolphin
@@ -189,6 +192,11 @@
       la = "eza -la --group-directories-first --icons";
       lt = "eza -lh --tree --icons";
       cat = "bat";
+      dunst = "dunst -r";
+      ping = "gping";
+      dig = "doggo";
+      diff = "delta";
+      history = "mcfly";
       gst = "git status";
       gcm = "git commit";
       gad = "git add";
@@ -263,6 +271,11 @@
       la = "eza -la --group-directories-first --icons";
       lt = "eza -lh --tree --icons";
       cat = "bat";
+      dunst = "dunst -r";
+      ping = "gping";
+      dig = "doggo";
+      diff = "delta";
+      history = "mcfly";
       gst = "git status";
       gcm = "git commit";
       gad = "git add";
