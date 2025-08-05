@@ -179,7 +179,7 @@
   # mv ~/./.bashrc ~/./bashrc.bak
   # mv ~/./.zshrc ~/./zshrc.bak
   programs.bash = {
-    enable       = true;
+    enable = true;
     shellAliases = {
       ll = "eza -lh --group-directories-first --icons";
       la = "eza -la --group-directories-first --icons";
@@ -258,6 +258,7 @@
       ll = "eza -lh --group-directories-first --icons";
       la = "eza -la --group-directories-first --icons";
       lt = "eza -lh --tree --icons";
+      cat = "bat";
       gst = "git status";
       gcm = "git commit";
       gad = "git add";
