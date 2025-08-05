@@ -127,7 +127,7 @@
   };
 
   fonts.fontconfig = {
-     enable=true;
+     enable = true;
      defaultFonts = {
         monospace = [ "Noto Sans Mono" "FontAwesome" ];
         sansSerif = [ "Noto Sans" "FontAwesome" ];
