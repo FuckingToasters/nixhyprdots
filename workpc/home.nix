@@ -168,6 +168,14 @@
     };
   };
 
+
+  programs.home-manager.enable = true;
+  #programs.kitty.enable = true;
+  programs.firefox.enable = true;
+  programs.wofi.enable = true;
+  programs.waybar.enable = true;
+  programs.swaylock.enable = true;
+
   # mv ~/./.bashrc ~/./bashrc.bak
   # mv ~/./.zshrc ~/./zshrc.bak
   programs.bash = {
@@ -224,7 +232,8 @@
   };
 
   programs.zsh = {
-    enable       = true;
+    enable = true;
+    loginShell = true;
     oh-my-zsh = {
       enable = true;
       theme = "robbyrussell"; # Or another OMZ theme you like
@@ -295,17 +304,10 @@
   '';
   };
 
-  programs.home-manager.enable = true;
-  #programs.kitty.enable = true;
-  programs.firefox.enable = true;
-  programs.wofi.enable = true;
-  programs.waybar.enable = true;
-  programs.swaylock.enable = true;
-
-  #programs.nh = {
-    #enable = true;
-    #flake = "/home/henrikp/.dotfiles";
-  #};
+  programs.nh = {
+    enable = true;
+    flake = "/home/henrikp/.dotfiles";
+  };
 
   programs.git = {
     enable = true;
