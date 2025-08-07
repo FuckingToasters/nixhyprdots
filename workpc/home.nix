@@ -95,6 +95,7 @@
     obsidian
     nextcloud-client
     libreoffice
+    onlyoffice-desktopeditors
     kdePackages.yakuake
     transmission_4-gtk
     distrobox
@@ -220,6 +221,7 @@
       df = "df -h";
       c = "clear";
       teams = "teams-for-linux";
+      onlyoffice = "onlyoffice-desktopeditors";
     };
     initExtra    = ''
      # run fastfetch on every interactive Bash start
@@ -299,6 +301,7 @@
       df = "df -h";
       c = "clear";
       teams = "teams-for-linux";
+      onlyoffice = "onlyoffice-desktopeditors";
     };
     initContent = ''
      # run fastfetch on every interactive Bash start
