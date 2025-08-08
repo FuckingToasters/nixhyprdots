@@ -188,16 +188,17 @@
     enable = true;
     settings = {
       download-buffer-size = 524288000; # 500 MiB
+      auto-optimise-store = true;
     };
     gc = {
       automatic = true;
       frequency = "weekly";
       options = "--delete-older-than 7d";
     };
-    optimise = {
-      automatic = true;
-      dates = [ "3:45" ];
-    };
+    #optimise = {
+      #automatic = true;
+      #dates = [ "3:45" ];
+    #};
   };
 
   # mv ~/./.bashrc ~/./bashrc.bak
