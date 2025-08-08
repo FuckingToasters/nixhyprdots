@@ -232,7 +232,16 @@
       hyprconfig = "nano ~/.config/hypr/hyprland.conf";
       hyprbinds = "nano ~/.config/hypr/conf/keybindings/default_modified.conf";
       lsend = "localsend_app";
-      rebuild = "sudo nixos-rebuild switch --flake ~/dotfiles/workpc";
+      rebuild = ''
+        mv ~/.bashrc ~/.bashrc.bak \
+        && mv ~/.zshrc ~/.zshrc.bak \
+        && mv ~/.gtkrc-2.0 ~/.gtkrc-2.0.hm-bakup \
+        && mv ~/.config/gtk-3.0/settings.ini ~/.config/gtk-3.0/settings.ini.hm-bakup \
+        && mv ~/.config/gtk-4.0/gtk.css ~/.config/gtk-4.0/gtk.css.hm-bakup \
+        && mv ~/.config/gtk-4.0/settings.ini ~/.config/gtk-4.0/settings.ini.hm-bakup \
+        && sudo nixos-rebuild switch --flake ~/dotfiles/workpc
+      '';
+      #rebuild = "sudo nixos-rebuild switch --flake ~/dotfiles/workpc";
       cleanup = "sudo nix-collect-garbage";
       xclip = "xclip -selection clipboard";
       printnix = "cat ~/dotfiles/workpc/configuration.nix | xclip";
@@ -313,7 +322,16 @@
       hyprconfig = "nano ~/.config/hypr/hyprland.conf";
       hyprbinds = "nano ~/.config/hypr/conf/keybindings/default_modified.conf";
       lsend = "localsend_app";
-      rebuild = "sudo nixos-rebuild switch --flake ~/dotfiles/workpc";
+      rebuild = ''
+        mv ~/.bashrc ~/.bashrc.bak \
+        && mv ~/.zshrc ~/.zshrc.bak \
+        && mv ~/.gtkrc-2.0 ~/.gtkrc-2.0.hm-bakup \
+        && mv ~/.config/gtk-3.0/settings.ini ~/.config/gtk-3.0/settings.ini.hm-bakup \
+        && mv ~/.config/gtk-4.0/gtk.css ~/.config/gtk-4.0/gtk.css.hm-bakup \
+        && mv ~/.config/gtk-4.0/settings.ini ~/.config/gtk-4.0/settings.ini.hm-bakup \
+        && sudo nixos-rebuild switch --flake ~/dotfiles/workpc   
+      '';
+      #rebuild = "sudo nixos-rebuild switch --flake ~/dotfiles/workpc";      
       cleanup = "sudo nix-collect-garbage";
       xclip = "xclip -selection clipboard";
       printnix = "cat ~/dotfiles/workpc/configuration.nix | xclip";
