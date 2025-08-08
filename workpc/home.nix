@@ -184,7 +184,7 @@
   programs.waybar.enable = true;
   programs.swaylock.enable = true;
 
-  programs.nix = {
+  nix = {
     enable = true;
     settings = {
       download-buffer-size = 524288000; # 500 MiB
