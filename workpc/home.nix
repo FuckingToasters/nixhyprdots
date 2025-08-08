@@ -241,8 +241,7 @@
         && mv ~/.config/gtk-4.0/settings.ini ~/.config/gtk-4.0/settings.ini.hm-bakup \
         && sudo nixos-rebuild switch --flake ~/dotfiles/workpc
       '';
-      #rebuild = "sudo nixos-rebuild switch --flake ~/dotfiles/workpc";
-      cleanup = "sudo nix-collect-garbage";
+      cleanup = "sudo nix-collect-garbag --delete-older-than 7d && nix store optimisee";
       xclip = "xclip -selection clipboard";
       printnix = "cat ~/dotfiles/workpc/configuration.nix | xclip";
       df = "df -h";
@@ -331,8 +330,7 @@
         && mv ~/.config/gtk-4.0/settings.ini ~/.config/gtk-4.0/settings.ini.hm-bakup \
         && sudo nixos-rebuild switch --flake ~/dotfiles/workpc   
       '';
-      #rebuild = "sudo nixos-rebuild switch --flake ~/dotfiles/workpc";      
-      cleanup = "sudo nix-collect-garbage";
+      cleanup = "sudo nix-collect-garbag --delete-older-than 7d && nix store optimisee";
       xclip = "xclip -selection clipboard";
       printnix = "cat ~/dotfiles/workpc/configuration.nix | xclip";
       df = "df -h";
