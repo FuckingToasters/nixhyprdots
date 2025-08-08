@@ -209,6 +209,7 @@
       gcm = "git commit";
       gad = "git add";
       ncdu = "ncdu --exclude=/mnt --exclude=/nix";
+      hyprup = "flatpak update com.ml4w.dotfilesinstaller && hyprctl reload";
       nixupch = "sudo nix-channel --update";
       nixflake = "nano ~/dotfiles/workpc/flake.nix";
       nixconfig = "nano ~/dotfiles/workpc/configuration.nix";
@@ -289,6 +290,7 @@
       gcm = "git commit";
       gad = "git add";
       ncdu = "ncdu --exclude=/mnt --exclude=/nix";
+      hyprup = "flatpak update com.ml4w.dotfilesinstaller && hyprctl reload";
       nixupch = "sudo nix-channel --update";
       nixflake = "nano ~/dotfiles/workpc/flake.nix";
       nixconfig = "nano ~/dotfiles/workpc/configuration.nix";
