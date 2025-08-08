@@ -191,7 +191,7 @@
     };
     gc = {
       automatic = true;
-      dates = "weekly";
+      frequency = "weekly";
       options = "--delete-older-than 7d";
     };
     optimise = {
