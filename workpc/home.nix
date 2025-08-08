@@ -189,6 +189,15 @@
     settings = {
       download-buffer-size = 524288000; # 500 MiB
     };
+    gc = {
+      automatic = true;
+      dates = "weekly";
+      options = "--delete-older-than 7d";
+    };
+    optimise = {
+      automatic = true;
+      dates = [ "3:45" ];
+    };
   };
 
   # mv ~/./.bashrc ~/./bashrc.bak
