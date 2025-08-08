@@ -184,6 +184,13 @@
   programs.waybar.enable = true;
   programs.swaylock.enable = true;
 
+  programs.nix = {
+    enable = true;
+    settings = {
+      download-buffer-size = 524288000; # 500 MiB
+    };
+  };
+
   # mv ~/./.bashrc ~/./bashrc.bak
   # mv ~/./.zshrc ~/./zshrc.bak
   programs.bash = {
