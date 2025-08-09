@@ -233,7 +233,7 @@
       hyprconfig = "nano ~/.config/hypr/hyprland.conf";
       hyprbinds = "nano ~/.config/hypr/conf/keybindings/default_modified.conf";
       lsend = "localsend_app";
-      rebuild = "sudo nixos-rebuild switch --flake ~/dotfiles/workpc"
+      rebuild = "sudo nixos-rebuild switch --flake ~/dotfiles/workpc";
       rebuildmv = ''
         mv ~/.bashrc ~/.bashrc.bak \
         && mv ~/.zshrc ~/.zshrc.bak \
@@ -323,7 +323,7 @@
       hyprconfig = "nano ~/.config/hypr/hyprland.conf";
       hyprbinds = "nano ~/.config/hypr/conf/keybindings/default_modified.conf";
       lsend = "localsend_app";
-      rebuild = "sudo nixos-rebuild switch --flake ~/dotfiles/workpc"      
+      rebuild = "sudo nixos-rebuild switch --flake ~/dotfiles/workpc";      
       rebuildmv = ''
         mv ~/.bashrc ~/.bashrc.bak \
         && mv ~/.zshrc ~/.zshrc.bak \
