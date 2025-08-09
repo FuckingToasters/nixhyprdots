@@ -5,13 +5,19 @@
     enable = true;
     wifi.backend = "iwd";
   };
-  services.fprintd.enable = true;
   services.fwupd.enable = true;
   services.blueman.enable = true;  
   services.printing.enable = true;
   services.pulseaudio.enable = false;
   services.acpid.enable = true;
   security.rtkit.enable = true;
+  services.fprintd = {
+    enable = true;
+    tod = {
+      enable = true;
+      driver = pkgs.libfprint-2-tod1-elan;
+    };
+  };
   services.pipewire = {
     enable = true;
     alsa.enable = true;
