@@ -233,7 +233,8 @@
       hyprconfig = "nano ~/.config/hypr/hyprland.conf";
       hyprbinds = "nano ~/.config/hypr/conf/keybindings/default_modified.conf";
       lsend = "localsend_app";
-      rebuild = ''
+      rebuild = "sudo nixos-rebuild switch --flake ~/dotfiles/workpc"
+      rebuildmv = ''
         mv ~/.bashrc ~/.bashrc.bak \
         && mv ~/.zshrc ~/.zshrc.bak \
         && mv ~/.gtkrc-2.0 ~/.gtkrc-2.0.hm-bakup \
@@ -322,7 +323,8 @@
       hyprconfig = "nano ~/.config/hypr/hyprland.conf";
       hyprbinds = "nano ~/.config/hypr/conf/keybindings/default_modified.conf";
       lsend = "localsend_app";
-      rebuild = ''
+      rebuild = "sudo nixos-rebuild switch --flake ~/dotfiles/workpc"      
+      rebuildmv = ''
         mv ~/.bashrc ~/.bashrc.bak \
         && mv ~/.zshrc ~/.zshrc.bak \
         && mv ~/.gtkrc-2.0 ~/.gtkrc-2.0.hm-bakup \
