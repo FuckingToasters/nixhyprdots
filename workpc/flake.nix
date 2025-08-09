@@ -3,6 +3,7 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
 	nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
+        fingerprint-flake.url = "github:ahbnr/nixos-06cb-009a-fingerprint-sensor";
     home-manager = {
         url = "github:nix-community/home-manager/release-25.05";
         inputs.nixpkgs.follows = "nixpkgs";
@@ -13,7 +14,7 @@
   };
 
   outputs =
-    { nixpkgs, nix-flatpak, home-manager, ... }@inputs:
+    { nixpkgs, nix-flatpak, home-manager, fingerprint-flake, ... }@inputs:
 
     {
       nixosConfigurations = {
@@ -27,6 +28,7 @@
 	    ./modules/misc.nix
 	    nix-flatpak.nixosModules.nix-flatpak
 	    home-manager.nixosModules.home-manager
+            fingerprint-flake.nixosModules.default
           ];
           specialArgs = { inherit inputs; };
         };

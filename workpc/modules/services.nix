@@ -11,12 +11,16 @@
   services.pulseaudio.enable = false;
   services.acpid.enable = true;
   security.rtkit.enable = true;
-  services.fprintd = {
-    enable = true;
-    tod = {
-      enable = true;
-      driver = pkgs.libfprint-2-tod1-goodix;
-    };
+  #services.fprintd = {
+    #enable = true;
+    #tod = {
+      #enable = true;
+      #driver = pkgs.libfprint-2-tod1-goodix;
+    #};
+  #};
+  services."06cb-009a-fingerprint-sensor" = {                                 
+    enable = true;                                                            
+    backend = "python-validity";                                              
   };
   services.pipewire = {
     enable = true;
