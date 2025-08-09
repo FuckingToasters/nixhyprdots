@@ -1,0 +1,42 @@
+[
+    {
+        "key": "general:col.nogroup_border",
+        "value": "0xffffaaff"
+    },
+    {
+        "key": "general:col.inactive_border",
+        "value": "0xff5e5c64"
+    },
+    {
+        "key": "general:col.active_border",
+        "value": "0xfff1dfda"
+    },
+    {
+        "key": "general:col.nogroup_border_active",
+        "value": "0xffff00ff"
+    },
+    {
+        "key": "general:gaps_in",
+        "value": 3.0
+    },
+    {
+        "key": "general:gaps_out",
+        "value": 5.0
+    },
+    {
+        "key": "general:gaps_workspaces",
+        "value": 0
+    },
+    {
+        "key": "decoration:rounding",
+        "value": 7
+    },
+    {
+        "key": "animations:enabled",
+        "value": "true"
+    },
+    {
+        "key": "general:border_size",
+        "value": 4
+    }
+]

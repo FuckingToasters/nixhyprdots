@@ -1,0 +1,59 @@
+{
+    "Account": {
+        "access_token": "BQA-yCTVS5jwS-M-AzT1rvJHep9H-kUmxOM-4LjuOFrGpvrB1qqCADVNfoO-dtiZUNGww09k5fUOQI0u4pJ3ngOgIis0XwQaAlefvnB2u2Iwrnkr1CbogeiLeigXeKVqgLaq_lvrW1MN_nDgELcYohQ6AVFZ27tPpJS2yW1R9MJK4tKB_zZViYyqmoXZYUOp4ZDZTRbAa8NF72i5ncOCEWviIG8PSU2TevIhP8caqz7tsxBY1ZW1DAznjR_f5YM3BMsA1ngz2njIRJdpIsG5rJ3_RixrG0-Kw8OHOfa7Agysa8wM7VabkmULiRC6aGWUgvsY4i4L_ZV-KHxCL7MuWEovk9t8nadsgB_N-lnHFCMIAskEt_IV",
+        "client_id": "c7960f43f5c24d718fdfa03370060014",
+        "client_secret": "dfb5efdef6e44b44aa29aab62a9f4f53",
+        "last_refresh": 1754307005,
+        "refresh_token": "AQCAPulW4MjZYfvBzgQXPIbNEq-gahCkXgOpHmh401ksvzmX3xqOPeTWXcP0IiZ0c0fztTikoRVHd2jfXGAzDj8dobHxHDhuUVwbHbv7vjwmJESyJstBb2eEpbUhYZt0np0"
+    },
+    "General": {
+        "check_for_updates": true,
+        "close_to_tray": false,
+        "custom_playlist_order": [],
+        "fallback_icons": false,
+        "hidden_song_headers": [],
+        "ignore_unavailable_index": false,
+        "last_device": "dbd55348ef1af02f2e30fbe31c41a89a5b726a4c",
+        "last_playlist": "675Dc5nzocsoSOkLo2W9RI",
+        "last_version": "v4.0.0",
+        "media_controller": false,
+        "native_window": false,
+        "notify_track_change": false,
+        "playlist_order": 0,
+        "refresh_interval": 3,
+        "relative_added": true,
+        "show_changelog": true,
+        "song_header_sort_by": -1,
+        "style": "",
+        "style_palette": 0,
+        "track_list_resize_mode": 0,
+        "track_numbers": 1,
+        "tray_album_art": false,
+        "tray_icon": true,
+        "tray_light_icon": false
+    },
+    "Qt": {
+        "album_shape": 1,
+        "album_size": 0,
+        "custom_font_name": "",
+        "custom_font_size": 0,
+        "library_layout": 0,
+        "mirror_title_bar": false,
+        "system_title_bar": false,
+        "toolbar_position": 1,
+        "track_title": ""
+    },
+    "Spotify": {
+        "additional_arguments": "",
+        "always_start": true,
+        "backend": "",
+        "bitrate": 320,
+        "device_type": 0,
+        "disable_discovery": false,
+        "global_config": false,
+        "max_queue": 500,
+        "path": "",
+        "start_client": false,
+        "volume": 100
+    }
+}

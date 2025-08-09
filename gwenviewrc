@@ -1,0 +1,20 @@
+[General]
+LastUsedVersion=210800
+
+[MainWindow]
+MenuBar=Disabled
+
+[Recent Files]
+File1[$e]=$HOME/Pictures/screenshot_02082025_164839.jpg
+File2[$e]=$HOME/Pictures/wallpaper/Abstract - Nature.jpg
+File3[$e]=$HOME/Pictures/Screenshots/2025-08-03_22-06-20.png
+File4[$e]=$HOME/Pictures/Screenshots/screenshot_03082025_221505.jpg
+File5[$e]=$HOME/Pictures/Screenshots/screenshot_03082025_221611.jpg
+Name1[$e]=screenshot_02082025_164839.jpg
+Name2[$e]=Abstract - Nature.jpg
+Name3[$e]=2025-08-03_22-06-20.png
+Name4[$e]=screenshot_03082025_221505.jpg
+Name5[$e]=screenshot_03082025_221611.jpg
+
+[SideBar]
+InformationSplitterSizes=209,246

@@ -1,0 +1,6 @@
+2025/08/04-17:24:01.452 1c2d Reusing MANIFEST /home/henrikp/.config/teams-for-linux/Partitions/teams-4-linux/Local Storage/leveldb/MANIFEST-000001
+2025/08/04-17:24:01.463 1c2d Recovering log #6
+2025/08/04-17:24:01.464 1c2d Reusing old log /home/henrikp/.config/teams-for-linux/Partitions/teams-4-linux/Local Storage/leveldb/000006.log 
+2025/08/04-17:26:06.929 1c2d Level-0 table #10: started
+2025/08/04-17:26:06.959 1c2d Level-0 table #10: 64524 bytes OK
+2025/08/04-17:26:06.966 1c2d Delete type=0 #6

@@ -1,0 +1,189 @@
+8/8/2025, 7:54:13 PM GMT+2 0: 
+
+----------------------------------------------
+8/8/2025, 7:54:13 PM GMT+2 1: Discord starting: {"releaseChannel":"stable","version":"0.0.103"}, modulepath: /home/henrikp/.config/discord/0.0.103/modules
+8/8/2025, 7:54:13 PM GMT+2 2: ✅ webContents.created web1 ""
+8/8/2025, 7:54:13 PM GMT+2 3: ✅ window.created win1 "discord"
+8/8/2025, 7:54:13 PM GMT+2 4: ✅ webContents.did-finish-load web1
+8/8/2025, 7:54:19 PM GMT+2 5: ✅ webContents.created web2 ""
+8/8/2025, 7:54:19 PM GMT+2 6: ✅ window.created win2 "Discord"
+8/8/2025, 7:54:20 PM GMT+2 7: ✅ webContents.did-finish-load web2
+8/8/2025, 7:54:21 PM GMT+2 8: window.close win1
+8/8/2025, 7:54:21 PM GMT+2 9: webContents.destroyed web1
+8/8/2025, 7:54:21 PM GMT+2 10: window.closed win1
+8/8/2025, 10:09:09 PM GMT+2 11: before-quit
+8/8/2025, 10:09:09 PM GMT+2 12: window.close win2
+8/8/2025, 10:09:09 PM GMT+2 13: ❌ child-process-gone {
+  type: 'Utility',
+  reason: 'killed',
+  exitCode: 15,
+  serviceName: 'audio.mojom.AudioService',
+  name: 'Audio Service'
+}
+8/8/2025, 10:09:09 PM GMT+2 14: ❌ child-process-gone {
+  type: 'Utility',
+  reason: 'killed',
+  exitCode: 15,
+  serviceName: 'network.mojom.NetworkService',
+  name: 'Network Service'
+}
+8/8/2025, 10:09:09 PM GMT+2 15: ❌ child-process-gone {
+  type: 'Utility',
+  reason: 'killed',
+  exitCode: 15,
+  serviceName: 'video_capture.mojom.VideoCaptureService',
+  name: 'Video Capture'
+}
+8/8/2025, 10:17:24 PM GMT+2 0: 
+
+----------------------------------------------
+8/8/2025, 10:17:24 PM GMT+2 1: Discord starting: {"releaseChannel":"stable","version":"0.0.103"}, modulepath: /home/henrikp/.config/discord/0.0.103/modules
+8/8/2025, 10:17:24 PM GMT+2 2: ✅ webContents.created web1 ""
+8/8/2025, 10:17:24 PM GMT+2 3: ✅ window.created win1 "discord"
+8/8/2025, 10:17:25 PM GMT+2 4: ✅ webContents.did-finish-load web1
+8/8/2025, 10:17:25 PM GMT+2 5: ✅ webContents.created web2 ""
+8/8/2025, 10:17:25 PM GMT+2 6: ✅ window.created win2 "Discord"
+8/8/2025, 10:17:26 PM GMT+2 7: ✅ webContents.did-finish-load web2
+8/8/2025, 10:17:28 PM GMT+2 8: window.close win1
+8/8/2025, 10:17:28 PM GMT+2 9: webContents.destroyed web1
+8/8/2025, 10:17:28 PM GMT+2 10: window.closed win1
+8/8/2025, 11:47:35 PM GMT+2 11: window.close win2
+8/8/2025, 11:47:53 PM GMT+2 0: 
+
+----------------------------------------------
+8/8/2025, 11:47:53 PM GMT+2 1: Discord starting: {"releaseChannel":"stable","version":"0.0.103"}, modulepath: /home/henrikp/.config/discord/0.0.103/modules
+8/8/2025, 11:48:05 PM GMT+2 12: before-quit
+8/8/2025, 11:48:05 PM GMT+2 13: window.close win2
+8/8/2025, 11:48:06 PM GMT+2 14: webContents.destroyed web2
+8/8/2025, 11:48:06 PM GMT+2 15: window.closed win2
+8/8/2025, 11:48:17 PM GMT+2 0: 
+
+----------------------------------------------
+8/8/2025, 11:48:17 PM GMT+2 1: Discord starting: {"releaseChannel":"stable","version":"0.0.103"}, modulepath: /home/henrikp/.config/discord/0.0.103/modules
+8/8/2025, 11:48:17 PM GMT+2 2: ✅ webContents.created web1 ""
+8/8/2025, 11:48:17 PM GMT+2 3: ✅ window.created win1 "discord"
+8/8/2025, 11:48:17 PM GMT+2 4: ✅ webContents.did-finish-load web1
+8/8/2025, 11:48:28 PM GMT+2 5: before-quit
+8/8/2025, 11:48:45 PM GMT+2 0: 
+
+----------------------------------------------
+8/8/2025, 11:48:45 PM GMT+2 1: Discord starting: {"releaseChannel":"stable","version":"0.0.103"}, modulepath: /home/henrikp/.config/discord/0.0.103/modules
+8/8/2025, 11:48:45 PM GMT+2 2: ✅ webContents.created web1 ""
+8/8/2025, 11:48:45 PM GMT+2 3: ✅ window.created win1 "discord"
+8/8/2025, 11:48:45 PM GMT+2 4: ✅ webContents.did-finish-load web1
+8/8/2025, 11:48:49 PM GMT+2 5: before-quit
+8/8/2025, 11:48:49 PM GMT+2 6: window.close win1
+8/8/2025, 11:49:15 PM GMT+2 0: 
+
+----------------------------------------------
+8/8/2025, 11:49:15 PM GMT+2 1: Discord starting: {"releaseChannel":"stable","version":"0.0.103"}, modulepath: /home/henrikp/.config/discord/0.0.103/modules
+8/8/2025, 11:49:15 PM GMT+2 2: ✅ webContents.created web1 ""
+8/8/2025, 11:49:15 PM GMT+2 3: ✅ window.created win1 "discord"
+8/8/2025, 11:49:15 PM GMT+2 4: ✅ webContents.did-finish-load web1
+8/8/2025, 11:49:27 PM GMT+2 5: before-quit
+8/8/2025, 11:49:27 PM GMT+2 6: window.close win1
+8/8/2025, 11:49:38 PM GMT+2 0: 
+
+----------------------------------------------
+8/8/2025, 11:49:38 PM GMT+2 1: Discord starting: {"releaseChannel":"stable","version":"0.0.103"}, modulepath: /home/henrikp/.config/discord/0.0.103/modules
+8/8/2025, 11:49:38 PM GMT+2 2: ✅ webContents.created web1 ""
+8/8/2025, 11:49:38 PM GMT+2 3: ✅ window.created win1 "discord"
+8/8/2025, 11:49:38 PM GMT+2 4: ✅ webContents.did-finish-load web1
+8/8/2025, 11:49:43 PM GMT+2 5: before-quit
+8/8/2025, 11:51:24 PM GMT+2 0: 
+
+----------------------------------------------
+8/8/2025, 11:51:24 PM GMT+2 1: Discord starting: {"releaseChannel":"stable","version":"0.0.103"}, modulepath: /home/henrikp/.config/discord/0.0.103/modules
+8/8/2025, 11:51:24 PM GMT+2 2: ✅ webContents.created web1 ""
+8/8/2025, 11:51:24 PM GMT+2 3: ✅ window.created win1 "discord"
+8/8/2025, 11:51:24 PM GMT+2 4: ✅ webContents.did-finish-load web1
+8/8/2025, 11:51:39 PM GMT+2 5: before-quit
+8/8/2025, 11:55:05 PM GMT+2 0: 
+
+----------------------------------------------
+8/8/2025, 11:55:05 PM GMT+2 1: Discord starting: {"releaseChannel":"stable","version":"0.0.103"}, modulepath: /home/henrikp/.config/discord/0.0.103/modules
+8/8/2025, 11:55:05 PM GMT+2 2: ✅ webContents.created web1 ""
+8/8/2025, 11:55:05 PM GMT+2 3: ✅ window.created win1 "discord"
+8/8/2025, 11:55:05 PM GMT+2 4: ✅ webContents.did-finish-load web1
+8/8/2025, 11:55:15 PM GMT+2 5: window.close win1
+8/9/2025, 12:04:21 AM GMT+2 0: 
+
+----------------------------------------------
+8/9/2025, 12:04:21 AM GMT+2 1: Discord starting: {"releaseChannel":"stable","version":"0.0.103"}, modulepath: /home/henrikp/.config/discord/0.0.103/modules
+8/9/2025, 12:04:21 AM GMT+2 2: ✅ webContents.created web1 ""
+8/9/2025, 12:04:21 AM GMT+2 3: ✅ window.created win1 "discord"
+8/9/2025, 12:04:22 AM GMT+2 4: ✅ webContents.did-finish-load web1
+8/9/2025, 12:04:22 AM GMT+2 5: ✅ webContents.created web2 ""
+8/9/2025, 12:04:22 AM GMT+2 6: ✅ window.created win2 "Discord"
+8/9/2025, 12:04:23 AM GMT+2 7: ✅ webContents.did-finish-load web2
+8/9/2025, 12:04:24 AM GMT+2 8: window.close win1
+8/9/2025, 12:04:24 AM GMT+2 9: webContents.destroyed web1
+8/9/2025, 12:04:24 AM GMT+2 10: window.closed win1
+8/9/2025, 12:04:27 AM GMT+2 11: ✅ webContents.did-finish-load web2
+8/9/2025, 12:04:40 AM GMT+2 12: ✅ webContents.created web3 ""
+8/9/2025, 12:04:40 AM GMT+2 13: ✅ webContents.did-finish-load web3
+8/9/2025, 12:04:52 AM GMT+2 0: 
+
+----------------------------------------------
+8/9/2025, 12:04:52 AM GMT+2 1: Discord starting: {"releaseChannel":"stable","version":"0.0.103"}, modulepath: /home/henrikp/.config/discord/0.0.103/modules
+8/9/2025, 12:04:52 AM GMT+2 2: ✅ webContents.created web1 ""
+8/9/2025, 12:04:52 AM GMT+2 3: ✅ window.created win1 "discord"
+8/9/2025, 12:04:52 AM GMT+2 4: ✅ webContents.created web2 ""
+8/9/2025, 12:04:52 AM GMT+2 5: ✅ window.created win2 "Discord"
+8/9/2025, 12:04:52 AM GMT+2 6: ✅ webContents.did-finish-load web1
+8/9/2025, 12:04:54 AM GMT+2 7: ✅ webContents.did-finish-load web2
+8/9/2025, 12:04:55 AM GMT+2 8: window.close win1
+8/9/2025, 12:04:55 AM GMT+2 9: webContents.destroyed web1
+8/9/2025, 12:04:55 AM GMT+2 10: window.closed win1
+8/9/2025, 12:07:48 AM GMT+2 11: ✅ webContents.created web3 ""
+8/9/2025, 12:07:48 AM GMT+2 12: ✅ webContents.did-finish-load web3
+8/9/2025, 10:28:25 AM GMT+2 13: window.close win2
+8/9/2025, 12:02:50 PM GMT+2 0: 
+
+----------------------------------------------
+8/9/2025, 12:02:50 PM GMT+2 1: Discord starting: {"releaseChannel":"stable","version":"0.0.103"}, modulepath: /home/henrikp/.config/discord/0.0.103/modules
+8/9/2025, 1:22:11 PM GMT+2 14: before-quit
+8/9/2025, 1:22:11 PM GMT+2 15: window.close win2
+8/9/2025, 1:22:11 PM GMT+2 16: ❌ child-process-gone {
+  type: 'Utility',
+  reason: 'killed',
+  exitCode: 15,
+  serviceName: 'audio.mojom.AudioService',
+  name: 'Audio Service'
+}
+8/9/2025, 1:22:11 PM GMT+2 17: ❌ child-process-gone {
+  type: 'Utility',
+  reason: 'killed',
+  exitCode: 15,
+  serviceName: 'network.mojom.NetworkService',
+  name: 'Network Service'
+}
+8/9/2025, 1:22:11 PM GMT+2 18: ❌ render-process-gone { reason: 'clean-exit', exitCode: 0 }
+8/9/2025, 1:56:43 PM GMT+2 0: 
+
+----------------------------------------------
+8/9/2025, 1:56:43 PM GMT+2 1: Discord starting: {"releaseChannel":"stable","version":"0.0.103"}, modulepath: /home/henrikp/.config/discord/0.0.103/modules
+8/9/2025, 1:56:43 PM GMT+2 2: ✅ webContents.created web1 ""
+8/9/2025, 1:56:43 PM GMT+2 3: ✅ window.created win1 "discord"
+8/9/2025, 1:56:44 PM GMT+2 4: ✅ webContents.did-finish-load web1
+8/9/2025, 1:56:44 PM GMT+2 5: ✅ webContents.created web2 ""
+8/9/2025, 1:56:44 PM GMT+2 6: ✅ window.created win2 "Discord"
+8/9/2025, 1:56:45 PM GMT+2 7: ✅ webContents.did-finish-load web2
+8/9/2025, 1:56:46 PM GMT+2 8: window.close win1
+8/9/2025, 1:56:46 PM GMT+2 9: webContents.destroyed web1
+8/9/2025, 1:56:46 PM GMT+2 10: window.closed win1
+8/9/2025, 5:50:12 PM GMT+2 11: before-quit
+8/9/2025, 5:50:12 PM GMT+2 12: window.close win2
+8/9/2025, 5:53:10 PM GMT+2 0: 
+
+----------------------------------------------
+8/9/2025, 5:53:10 PM GMT+2 1: Discord starting: {"releaseChannel":"stable","version":"0.0.103"}, modulepath: /home/henrikp/.config/discord/0.0.103/modules
+8/9/2025, 5:53:10 PM GMT+2 2: ✅ webContents.created web1 ""
+8/9/2025, 5:53:10 PM GMT+2 3: ✅ window.created win1 "discord"
+8/9/2025, 5:53:10 PM GMT+2 4: ✅ webContents.did-finish-load web1
+8/9/2025, 5:53:10 PM GMT+2 5: ✅ webContents.created web2 ""
+8/9/2025, 5:53:10 PM GMT+2 6: ✅ window.created win2 "Discord"
+8/9/2025, 5:53:11 PM GMT+2 7: ✅ webContents.did-finish-load web2
+8/9/2025, 5:53:13 PM GMT+2 8: window.close win1
+8/9/2025, 5:53:13 PM GMT+2 9: webContents.destroyed web1
+8/9/2025, 5:53:13 PM GMT+2 10: window.closed win1
