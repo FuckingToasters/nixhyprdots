@@ -11,6 +11,12 @@
   services.pulseaudio.enable = false;
   services.acpid.enable = true;
   security.rtkit.enable = true;
+  security.pam.services = {
+    login.fprintAuth = true;
+    sudo.fprintAuth = true;
+    gdm.fprintAuth = true;
+  };
+
   #services.fprintd = {
     #enable = true;
     #tod = {
