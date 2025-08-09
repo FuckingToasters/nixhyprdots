@@ -70,6 +70,7 @@
     doggo
     delta
     mcfly
+    fprintd
 
     # ========== File Management ==========
     kdePackages.dolphin

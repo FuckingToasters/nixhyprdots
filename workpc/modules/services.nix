@@ -5,6 +5,7 @@
     enable = true;
     wifi.backend = "iwd";
   };
+  services.fprintd.enable = true;
   services.fwupd.enable = true;
   services.blueman.enable = true;  
   services.printing.enable = true;
