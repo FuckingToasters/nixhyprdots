@@ -4,6 +4,7 @@ This Repo contains my NixOS Configuration Files.
 They are based on the Config Files rom Matt but modified a bunch by myself.
 
 ## What i've added and changed:
+- Added support for the Lenovo T480 Fingerprint Sensor for GDM, Root User and SSH Login.
 - Use of Home-Manager alongside Flakes for User-Specific Configurations
 - Adding of zsh shell Configuration with a few useful Plugins
 - More Aliases for Bash & zsh
